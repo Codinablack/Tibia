@@ -110,19 +110,11 @@ namespace Tibia.Network
         ///     Resets the specified start index.
         /// </summary>
         /// <param name="startIndex">The start index.</param>
-        public void Reset(int startIndex)
+        public void Reset(int startIndex = 8)
         {
             _buffer = new byte[BufferSize];
             _length = startIndex;
             Position = startIndex;
-        }
-
-        /// <summary>
-        ///     Resets this instance.
-        /// </summary>
-        public void Reset()
-        {
-            Reset(8);
         }
 
         /// <summary>
