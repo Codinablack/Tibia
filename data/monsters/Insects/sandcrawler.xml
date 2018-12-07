@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Sandcrawler" nameDescription="a sandcrawler" race="venom" experience="20" speed="170" manacost="250">
+	<health now="30" max="30" />
+	<look type="350" corpse="11357" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="true" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="true" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-3" />
+	</attacks>
+	<defenses armor="10" defense="10" />
+	<elements>
+		<element firePercent="-5" />
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Chrk chrk!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="6" chance="33333" />
+		<item name="sandcrawler shell" chance="2173" />
+	</loot>
+</monster>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{650EE909-D368-492A-AF26-DBB5D298431E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tibia.Service</RootNamespace>
+    <AssemblyName>Tibia.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="GameService.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tibia.Data.Providers.OpenTibia\Tibia.Data.Providers.OpenTibia.csproj">
+      <Project>{022ef922-694a-4e50-a907-c740f3b21717}</Project>
+      <Name>Tibia.Data.Providers.OpenTibia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Data.Providers.Ultimate\Tibia.Data.Providers.Ultimate.csproj">
+      <Project>{577e153d-0e9c-448f-96ab-3c840b7b490f}</Project>
+      <Name>Tibia.Data.Providers.Ultimate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Data.Providers\Tibia.Data.Providers.csproj">
+      <Project>{0780b576-ac22-4149-884b-209489c87b5d}</Project>
+      <Name>Tibia.Data.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Items\Tibia.Items.csproj">
+      <Project>{0656210E-2917-4812-B748-EBF5A54D3C1F}</Project>
+      <Name>Tibia.Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Network.Game\Tibia.Network.Game.csproj">
+      <Project>{832E645C-3953-41B1-932A-1F64012D1ACC}</Project>
+      <Name>Tibia.Network.Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Battle\Tibia.Battle.csproj">
+      <Project>{f44aad23-3766-4946-adbb-541ad0a64dff}</Project>
+      <Name>Tibia.Battle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Collections.Generic\Tibia.Collections.Generic.csproj">
+      <Project>{1c3bf2e1-52ae-4321-bbe7-95c9784100c6}</Project>
+      <Name>Tibia.Collections.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Combat\Tibia.Combat.csproj">
+      <Project>{a5eed95a-c0a1-48bd-945a-44a42e6c429f}</Project>
+      <Name>Tibia.Combat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Communications.Channels\Tibia.Communications.Channels.csproj">
+      <Project>{d326e8c5-8d49-45ff-9a89-835f385a0f0d}</Project>
+      <Name>Tibia.Communications.Channels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Communications.Commands\Tibia.Communications.Commands.csproj">
+      <Project>{039738dc-9116-40ea-aace-bbdaac07c459}</Project>
+      <Name>Tibia.Communications.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Communications\Tibia.Communications.csproj">
+      <Project>{870e8e0b-2059-4709-9b0e-46f554509e2f}</Project>
+      <Name>Tibia.Communications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Core\Tibia.Core.csproj">
+      <Project>{9a9ff0b8-0bb4-4a16-920f-2203c29ca3c9}</Project>
+      <Name>Tibia.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Creatures\Tibia.Creatures.csproj">
+      <Project>{9d915d42-f49c-4164-ae0d-c7085a9b7900}</Project>
+      <Name>Tibia.Creatures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Data.Services\Tibia.Data.Services.csproj">
+      <Project>{f2bdb666-f05a-4e18-b583-84b9585b10f8}</Project>
+      <Name>Tibia.Data.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Data.Storage\Tibia.Data.Storage.csproj">
+      <Project>{a916f518-c994-4ac8-89ee-935b727c3076}</Project>
+      <Name>Tibia.Data.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Data\Tibia.Data.csproj">
+      <Project>{778664ae-9e83-4324-ae41-27897af14758}</Project>
+      <Name>Tibia.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Guilds\Tibia.Guilds.csproj">
+      <Project>{bce72484-06ec-4b8c-9803-609b8a683540}</Project>
+      <Name>Tibia.Guilds</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.InteropServices\Tibia.InteropServices.csproj">
+      <Project>{fd8394f7-d6ca-4a25-bab2-23abbf41acf4}</Project>
+      <Name>Tibia.InteropServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Map\Tibia.Map.csproj">
+      <Project>{a47ff311-1e56-4d92-b65b-0e8781180f5e}</Project>
+      <Name>Tibia.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Mounts\Tibia.Mounts.csproj">
+      <Project>{d42d6dfa-daea-49a2-b972-316f4fd9e94f}</Project>
+      <Name>Tibia.Mounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Network.Login\Tibia.Network.Login.csproj">
+      <Project>{db921d31-5364-4ba9-aa83-8b69ff3f9db9}</Project>
+      <Name>Tibia.Network.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Network\Tibia.Network.csproj">
+      <Project>{fdb4ff0e-e043-4369-8639-503536168b86}</Project>
+      <Name>Tibia.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Outfits\Tibia.Outfits.csproj">
+      <Project>{93cfc850-981a-4390-98e6-35214c5c58eb}</Project>
+      <Name>Tibia.Outfits</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Parties\Tibia.Parties.csproj">
+      <Project>{4ad17638-11d7-4f23-b27b-c3f256e6a1cb}</Project>
+      <Name>Tibia.Parties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Quests\Tibia.Quests.csproj">
+      <Project>{07a6381a-890b-4582-b4c1-c60da97a506a}</Project>
+      <Name>Tibia.Quests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Security.Cryptography\Tibia.Security.Cryptography.csproj">
+      <Project>{fb403212-08eb-4723-a476-0d6293709083}</Project>
+      <Name>Tibia.Security.Cryptography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Spawns\Tibia.Spawns.csproj">
+      <Project>{76d709ee-e428-4723-acfa-63654f4122d3}</Project>
+      <Name>Tibia.Spawns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Spells\Tibia.Spells.csproj">
+      <Project>{b5444847-5ffd-4d13-a2e7-de848ddf1a43}</Project>
+      <Name>Tibia.Spells</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tibia.Vocations\Tibia.Vocations.csproj">
+      <Project>{8655e9df-baee-4689-b8f1-e94eb3f7e388}</Project>
+      <Name>Tibia.Vocations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

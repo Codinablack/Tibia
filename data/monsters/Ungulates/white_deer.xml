@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="White Deer" nameDescription="a white deer" race="blood" experience="0" speed="190">
+	<health now="195" max="195" />
+	<look type="400" corpse="13513" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="true" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="195" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<voices interval="5000" chance="10">
+		<voice sentence="*wheeze*" />
+		<voice sentence="ROOOAAARR!!" />
+		<voice sentence="*sniff*" />
+		<voice sentence="*bell*" />
+	</voices>
+</monster>

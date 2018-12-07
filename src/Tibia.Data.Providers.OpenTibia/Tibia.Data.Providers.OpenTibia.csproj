@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tibia.Data.Providers\Tibia.Data.Providers.csproj" />
+    <ProjectReference Include="..\Tibia.Items\Tibia.Items.csproj" />
+    <ProjectReference Include="..\Tibia.Collections.Generic\Tibia.Collections.Generic.csproj" />
+    <ProjectReference Include="..\Tibia.Combat\Tibia.Combat.csproj" />
+    <ProjectReference Include="..\Tibia.Map\Tibia.Map.csproj" />
+    <ProjectReference Include="..\Tibia.Spawns\Tibia.Spawns.csproj" />
+    <ProjectReference Include="..\Tibia.Spells\Tibia.Spells.csproj" />
+    <ProjectReference Include="..\Tibia.Vocations\Tibia.Vocations.csproj" />
+  </ItemGroup>
+
+</Project>

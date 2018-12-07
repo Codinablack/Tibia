@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Damaged Crystal Golem" nameDescription="a damaged crystal golem" race="energy" experience="0" speed="180">
+	<health now="500" max="500" />
+	<look type="508" corpse="18466" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="500" />
+	</flags>
+</monster>

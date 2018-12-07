@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Deepling Worker" nameDescription="a deepling worker" race="blood" experience="130" speed="210">
+	<health now="190" max="190" />
+	<look type="470" corpse="15497" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="0" />
+		<flag runonhealth="20" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-80" />
+	</attacks>
+	<defenses armor="10" defense="10" />
+	<elements>
+		<element energyPercent="-20" />
+		<element earthPercent="-20" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+		<immunity drown="1" />
+		<immunity fire="1" />
+		<immunity ice="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Qjell afar gou jey!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="25" chance="70000" />
+		<item name="small emerald" countmax="3" chance="110" />
+		<item id="2667" countmax="3" chance="12020" /><!-- fish -->
+		<item name="fish fin" chance="350" />
+		<item name="heavy trident" chance="510" />
+		<item name="eye of a deepling" chance="283" />
+		<item name="deepling scales" chance="6950" />
+	</loot>
+</monster>

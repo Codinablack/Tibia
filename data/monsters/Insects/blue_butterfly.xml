@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="Butterfly" namedescription="a butterfly" race="venom" experience="0" speed="230">
+	<health now="2" max="2" />
+	<look type="227" corpse="4994" />
+	<targetchange interval="4000" chance="8" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="false" />
+		<flag staticattack="90" />
+		<flag targetdistance="6" />
+		<flag runonhealth="2" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+</monster>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Northern Pike" nameDescription="a northern pike" race="undead" experience="0" speed="180">
+	<health now="95" max="95" />
+	<look type="454" corpse="2669" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="0" />
+		<flag runonhealth="95" />
+		<flag canwalkonenergy="false" />
+	</flags>
+	<defenses armor="5" defense="5" />
+	<immunities>
+		<immunity earth="1" />
+		<immunity fire="1" />
+		<immunity invisible="1" />
+		<immunity drown="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Blub!" />
+	</voices>
+</monster>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Horse" nameDescription="a horse" race="blood" experience="0" speed="190">
+	<health now="75" max="75" />
+	<look type="434" corpse="0" />
+	<targetchange interval="4000" chance="20" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="75" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<voices interval="5000" chance="10">
+		<voice sentence="Weeeeheeeeeee" />
+		<voice sentence="*snort*" />
+		<voice sentence="*Weeeeheeeeaaa*" />
+	</voices>
+</monster>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Parrot" nameDescription="a parrot" race="blood" experience="0" speed="260" manacost="250">
+	<health now="25" max="25" />
+	<look type="217" corpse="6056" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="true" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="true" />
+		<flag convinceable="true" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="25" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-5" />
+	</attacks>
+	<defenses armor="5" defense="5" />
+	<voices interval="5000" chance="10">
+		<voice sentence="BR? PL? SWE?" />
+		<voice sentence="Screeech!" />
+		<voice sentence="Neeeewbiiieee!" />
+		<voice sentence="You advanshed, you advanshed!" />
+		<voice sentence="Hope you die and loooosh it!" />
+		<voice sentence="Hunterrr ish PK!" />
+		<voice sentence="Shhtop whining! Rrah" />
+		<voice sentence="I'm heeerrre! Screeeech!" />
+		<voice sentence="Leeave orrr hunted!!" />
+		<voice sentence="Blesshhh my stake! Screeech!" />
+		<voice sentence="Tarrrrp?" />
+		<voice sentence="You are corrrrupt! Corrrrupt!" />
+		<voice sentence="You powerrrrrrabuserrrrr!" />
+		<voice sentence="You advanshed, you advanshed!" />
+	</voices>
+</monster>

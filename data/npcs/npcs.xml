@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npcs>
+	<!-- Thais -->
+	<npc name="Eryn" file="Thais/Eryn.xml" />
+	<npc name="Riona" file="Thais/Riona.xml" />
+	<npc name="The Forgotten King" file="Thais/The Forgotten King.xml" />
+	<npc name="The Oracle" file="Thais/The Oracle.xml" />
+	<npc name="Tyoric" file="Thais/Tyoric.xml" />
+	<npc name="Alice" file="Thais/Alice.xml" />
+	<npc name="Deruno" file="Thais/Deruno.xml" />
+</npcs>

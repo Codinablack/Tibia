@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Squirrel" nameDescription="a squirrel" race="blood" experience="0" speed="300" manacost="220">
+	<health now="20" max="20" />
+	<look type="274" corpse="7628" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="true" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="true" />
+		<flag convinceable="true" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag runonhealth="20" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<defenses armor="5" defense="5" />
+	<voices interval="5000" chance="10">
+		<voice sentence="Chchch" />
+	</voices>
+	<loot>
+		<item name="walnut" chance="1140" />
+		<item name="peanut" chance="980" />
+		<item name="acorn" chance="50410" />
+	</loot>
+</monster>

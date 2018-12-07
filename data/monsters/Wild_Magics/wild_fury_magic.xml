@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wild Fury Magic" nameDescription="a wild fury magic" race="undead" experience="0" speed="210">
+	<health now="1" max="1" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="false" />
+		<flag hostile="false" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="1" />
+	</flags>
+	<defenses>
+		<defense name="effect" interval="100" chance="100" radius="1" target="0">
+			<attribute key="areaeffect" value="redshimmer" />
+		</defense>
+	</defenses>
+</monster>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Adventurer" nameDescription="an adventurer" race="blood" experience="0" speed="170">
+	<health now="65" max="65" />
+	<look type="129" head="92" body="15" legs="92" feet="82" corpse="20315" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="true" />
+		<flag convinceable="true" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="65" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+</monster>

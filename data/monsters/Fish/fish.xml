@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fish" nameDescription="a fish" race="undead" experience="0" speed="180">
+	<health now="25" max="25" />
+	<look type="455" corpse="2667" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="false" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="0" />
+		<flag runonhealth="25" />
+		<flag canwalkonenergy="false" />
+	</flags>
+	<defenses armor="5" defense="5" />
+	<immunities>
+		<immunity fire="1" />
+		<immunity earth="1" />
+		<immunity invisible="1" />
+		<immunity drown="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Blib!" />
+		<voice sentence="Blub!" />
+	</voices>
+</monster>

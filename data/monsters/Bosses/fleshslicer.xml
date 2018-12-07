@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fleshslicer" nameDescription="Fleshslicer" race="blood" experience="5500" speed="560">
+	<health now="5700" max="5700" />
+	<look type="457" corpse="15296" />
+	<targetchange interval="2000" chance="50" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="true" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="true" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="0" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-99" />
+	</attacks>
+	<defenses armor="12" defense="20" />
+	<elements>
+	</elements>
+	<immunities>
+	</immunities>
+	<voices interval="3000" chance="200">
+	</voices>
+	<loot>
+	</loot>
+</monster>

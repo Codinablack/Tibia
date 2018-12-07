@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DragonSorcerer.Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Network_Port_LoginServer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7171</Value>
+    </Setting>
+    <Setting Name="Network_Port_GameServer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7172</Value>
+    </Setting>
+    <Setting Name="Items_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\items\items.xml</Value>
+    </Setting>
+    <Setting Name="Items_Otb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\items\items.otb</Value>
+    </Setting>
+    <Setting Name="Map_Otb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\world\forgotten.otbm</Value>
+    </Setting>
+    <Setting Name="Houses_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\world\forgotten-house.xml</Value>
+    </Setting>
+    <Setting Name="Spawns_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\world\forgotten-spawn.xml</Value>
+    </Setting>
+    <Setting Name="Outfits_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\outfits.xml</Value>
+    </Setting>
+    <Setting Name="Mounts_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\mounts.xml</Value>
+    </Setting>
+    <Setting Name="Channels_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\channels\channels.xml</Value>
+    </Setting>
+    <Setting Name="Monsters_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\monsters\monsters.xml</Value>
+    </Setting>
+    <Setting Name="Spells_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\spells\spells.xml</Value>
+    </Setting>
+    <Setting Name="Npcs_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\npcs\npcs.xml</Value>
+    </Setting>
+    <Setting Name="Vocations_Xml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\data\vocations.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tibia.Creatures\Tibia.Creatures.csproj" />
+    <ProjectReference Include="..\Tibia.Data\Tibia.Data.csproj" />
+    <ProjectReference Include="..\Tibia.InteropServices\Tibia.InteropServices.csproj" />
+    <ProjectReference Include="..\Tibia.Network\Tibia.Network.csproj" />
+    <ProjectReference Include="..\Tibia.Security.Cryptography\Tibia.Security.Cryptography.csproj" />
+  </ItemGroup>
+
+</Project>

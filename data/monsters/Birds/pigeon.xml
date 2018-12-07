@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Pigeon" nameDescription="a pigeon" race="blood" experience="0" speed="260">
+	<health now="30" max="30" />
+	<look type="531" corpse="19709" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="true" />
+		<flag convinceable="false" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="true" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="30" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<defenses armor="5" defense="5" />
+	<voices interval="5000" chance="10">
+		<voice sentence="Coooo! Cooo!" />
+		<voice sentence="Coo! Coooo! Coo! Cooo!" />
+		<voice sentence="Coo! Coo! Coooo!" />
+	</voices>
+</monster>

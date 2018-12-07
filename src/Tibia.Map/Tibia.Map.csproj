@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tibia.Items\Tibia.Items.csproj" />
+    <ProjectReference Include="..\Tibia.Data.Services\Tibia.Data.Services.csproj" />
+    <ProjectReference Include="..\Tibia.Data.Storage\Tibia.Data.Storage.csproj" />
+    <ProjectReference Include="..\Tibia.Data\Tibia.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Strange Slime" nameDescription="a strange slime" race="venom" experience="0" speed="120">
+	<health now="15" max="15" />
+	<look type="19" corpse="1496" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="false" />
+		<flag attackable="true" />
+		<flag hostile="false" />
+		<flag illusionable="false" />
+		<flag convinceable="false" />
+		<flag pushable="false" />
+		<flag canpushitems="true" />
+		<flag canpushcreatures="false" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="false" />
+		<flag canwalkonfire="false" />
+		<flag canwalkonpoison="false" />
+	</flags>
+	<defenses armor="3" defense="10" />
+</monster>

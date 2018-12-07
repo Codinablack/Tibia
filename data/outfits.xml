@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outfits>
+	<!-- Female outfits -->
+	<outfit id="1" sex="0" spriteid="136" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="2" sex="0" spriteid="137" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="3" sex="0" spriteid="138" name="Mage" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="4" sex="0" spriteid="139" name="Knight" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="5" sex="0" spriteid="140" name="Noblewoman" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="6" sex="0" spriteid="141" name="Summoner" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="7" sex="0" spriteid="142" name="Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="8" sex="0" spriteid="147" name="Barbarian" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="9" sex="0" spriteid="148" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="10" sex="0" spriteid="149" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="11" sex="0" spriteid="150" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="12" sex="0" spriteid="155" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="13" sex="0" spriteid="156" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="14" sex="0" spriteid="157" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="15" sex="0" spriteid="158" name="Shaman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="16" sex="0" spriteid="252" name="Norsewoman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="17" sex="0" spriteid="269" name="Nightmare" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="18" sex="0" spriteid="270" name="Jester" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="19" sex="0" spriteid="279" name="Brotherhood" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="20" sex="0" spriteid="288" name="Demon Hunter" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="21" sex="0" spriteid="324" name="Yalaharian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="22" sex="0" spriteid="329" name="Newly Wed" premium="no" unlocked="no" enabled="yes" />
+	<outfit id="23" sex="0" spriteid="336" name="Warmaster" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="24" sex="0" spriteid="366" name="Wayfarer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="25" sex="0" spriteid="431" name="Afflicted" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="26" sex="0" spriteid="433" name="Elementalist" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="27" sex="0" spriteid="464" name="Deepling" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="28" sex="0" spriteid="466" name="Insectoid" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="29" sex="0" spriteid="471" name="Entrepreneur" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="30" sex="0" spriteid="513" name="Crystal Warlord" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="31" sex="0" spriteid="514" name="Soil Guardian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="32" sex="0" spriteid="542" name="Demon Outfit" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="33" sex="0" spriteid="575" name="Cave Explorer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="34" sex="0" spriteid="578" name="Dream Warden" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="35" sex="0" spriteid="618" name="Glooth Engineer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="36" sex="0" spriteid="620" name="Jersey" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="37" sex="0" spriteid="632" name="Champion" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="38" sex="0" spriteid="635" name="Conjurer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="39" sex="0" spriteid="636" name="Beastmaster" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="40" sex="0" spriteid="664" name="Chaos Acolyte" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="41" sex="0" spriteid="666" name="Death Herald" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="42" sex="0" spriteid="683" name="Ranger" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="43" sex="0" spriteid="694" name="Ceremonial Garb" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="44" sex="0" spriteid="696" name="Puppeteer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="45" sex="0" spriteid="698" name="Spirit Caller" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="46" sex="0" spriteid="724" name="Evoker" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="47" sex="0" spriteid="732" name="Seaweaver" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="48" sex="0" spriteid="745" name="Recruiter" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="49" sex="0" spriteid="749" name="Sea Dog" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="50" sex="0" spriteid="759" name="Royal Pumpkin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="51" sex="0" spriteid="845" name="Rift Warrior" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="52" sex="0" spriteid="852" name="Winter Warden" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="53" sex="0" spriteid="874" name="Philosopher" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="54" sex="0" spriteid="885" name="Arena Champion" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="55" sex="0" spriteid="900" name="Lupine Warden" premium="yes" unlocked="no" enabled="yes" />
+
+	<!-- Male outfits -->
+	<outfit id="56" sex="1" spriteid="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="57" sex="1" spriteid="129" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="58" sex="1" spriteid="130" name="Mage" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="59" sex="1" spriteid="131" name="Knight" premium="no" unlocked="yes" enabled="yes" />
+	<outfit id="60" sex="1" spriteid="132" name="Nobleman" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="61" sex="1" spriteid="133" name="Summoner" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="62" sex="1" spriteid="134" name="Warrior" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="63" sex="1" spriteid="143" name="Barbarian" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="64" sex="1" spriteid="144" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="65" sex="1" spriteid="145" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="66" sex="1" spriteid="146" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit id="67" sex="1" spriteid="151" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="68" sex="1" spriteid="152" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="69" sex="1" spriteid="153" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="70" sex="1" spriteid="154" name="Shaman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="71" sex="1" spriteid="251" name="Norseman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="72" sex="1" spriteid="268" name="Nightmare" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="73" sex="1" spriteid="273" name="Jester" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="74" sex="1" spriteid="278" name="Brotherhood" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="75" sex="1" spriteid="289" name="Demon Hunter" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="76" sex="1" spriteid="325" name="Yalaharian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="77" sex="1" spriteid="328" name="Newly Wed" premium="no" unlocked="no" enabled="yes" />
+	<outfit id="78" sex="1" spriteid="335" name="Warmaster" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="79" sex="1" spriteid="367" name="Wayfarer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="80" sex="1" spriteid="430" name="Afflicted" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="81" sex="1" spriteid="432" name="Elementalist" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="82" sex="1" spriteid="463" name="Deepling" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="83" sex="1" spriteid="465" name="Insectoid" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="84" sex="1" spriteid="472" name="Entrepreneur" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="85" sex="1" spriteid="512" name="Crystal Warlord" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="86" sex="1" spriteid="516" name="Soil Guardian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="87" sex="1" spriteid="541" name="Demon Outfit" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="88" sex="1" spriteid="574" name="Cave Explorer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="89" sex="1" spriteid="577" name="Dream Warden" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="90" sex="1" spriteid="610" name="Glooth Engineer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="91" sex="1" spriteid="619" name="Jersey" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="92" sex="1" spriteid="633" name="Champion" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="93" sex="1" spriteid="634" name="Conjurer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="94" sex="1" spriteid="637" name="Beastmaster" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="95" sex="1" spriteid="665" name="Chaos Acolyte" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="96" sex="1" spriteid="667" name="Death Herald" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="97" sex="1" spriteid="684" name="Ranger" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="98" sex="1" spriteid="695" name="Ceremonial Garb" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="99" sex="1" spriteid="697" name="Puppeteer" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="100" sex="1" spriteid="699" name="Spirit Caller" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="101" sex="1" spriteid="725" name="Evoker" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="102" sex="1" spriteid="733" name="Seaweaver" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="103" sex="1" spriteid="746" name="Recruiter" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="104" sex="1" spriteid="750" name="Sea Dog" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="105" sex="1" spriteid="760" name="Royal Pumpkin" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="106" sex="1" spriteid="846" name="Rift Warrior" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="107" sex="1" spriteid="853" name="Winter Warden" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="108" sex="1" spriteid="873" name="Philosopher" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="109" sex="1" spriteid="884" name="Arena Champion" premium="yes" unlocked="no" enabled="yes" />
+	<outfit id="110" sex="1" spriteid="899" name="Lupine Warden" premium="yes" unlocked="no" enabled="yes" />
+</outfits>
