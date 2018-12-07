@@ -1,35 +1,31 @@
-# Tibia #
+# Tibia
 
-Tibia is a massively multiplayer online role-playing game (MMORPG) as the result of using Microsoft's Development Stack.
-
-### What is this repository for? ###
-
-* Quick summary
+## Summary
 
 This repository aims to create a replica of the 00's popular game Tibia, originally developed by CipSoft GmbH. The product is the result of extensive use of Microsoft's Development Stack, including .NET Framework, C# and XNA Framework.
 
-* Version
+## Version
 
 The latest version can be built from the respective branch. However, if you wish to build up to the most recent commit, you can use the 'develop' branch.
 
-### How do I get set up? (Work In Progress) ###
+## Build Configuration (Work In Progress)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines (Work In Progress) ###
+### Configuration
+### Dependencies
+### Database
+### Tests
+### Deployment
 
-* Writing tests
-* Code review
-* Other guidelines
+## Contribution Guidelines (Work In Progress)
 
-### Who do I talk to? (Work In Progress) ###
+### Writing Tests
+### Code Review
+### Other Guidelines
 
-* Repo owner or admin
-* Other community or team contact
+## Community (Work In Progress)
 
-### Licenses (Work In Progress) ###
+### Repo owner or admin
+### Other community or team contact
+
+## Licenses (Work In Progress)
