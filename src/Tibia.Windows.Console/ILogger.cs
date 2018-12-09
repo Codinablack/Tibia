@@ -1,4 +1,4 @@
-﻿namespace Tibia.Service
+﻿namespace Tibia.Windows.Console
 {
     public interface ILogger
     {

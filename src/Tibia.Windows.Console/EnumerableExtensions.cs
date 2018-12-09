@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Tibia.Service
+namespace Tibia.Windows.Console
 {
     internal static class EnumerableExtensions
     {

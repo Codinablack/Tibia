@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Tibia.Service
+namespace Tibia.Windows.Console
 {
     public static class StringExtensions
     {

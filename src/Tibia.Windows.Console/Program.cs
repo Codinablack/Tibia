@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Tibia.Service
+namespace Tibia.Windows.Console
 {
     internal class Program
     {
@@ -11,7 +11,7 @@ namespace Tibia.Service
             gameService.Logger = new ConsoleLogger();
             await gameService.Start();
 
-            Console.ReadLine();
+            System.Console.ReadLine();
         }
     }
 }

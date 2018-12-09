@@ -25,12 +25,12 @@ using Tibia.Data.Providers.Ultimate;
 using Tibia.Data.Providers.Ultimate.Services;
 using Tibia.Data.Providers.OpenTibia;
 using Tibia.Security.Cryptography;
-using Tibia.Service.Properties;
 using Tibia.Spawns;
 using Tibia.Spells;
 using Tibia.Vocations;
+using Tibia.Windows.Console.Properties;
 
-namespace Tibia.Service
+namespace Tibia.Windows.Console
 {
     public class GameService
     {

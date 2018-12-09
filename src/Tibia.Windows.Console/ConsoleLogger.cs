@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Tibia.Service
+namespace Tibia.Windows.Console
 {
     public class ConsoleLogger : ILogger
     {
@@ -18,7 +18,7 @@ namespace Tibia.Service
         {
             _taskTimer.Restart();
             string formattedText = $"[{DateTime.UtcNow.ToString("dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture)}] {text}...";
-            Console.Write(formattedText);
+            System.Console.Write(formattedText);
             _startTextLength = formattedText.Length;
         }
 
@@ -31,13 +31,13 @@ namespace Tibia.Service
             const string done = "Done";
             string doneTime = _taskTimer.Elapsed.ToString(@"hh\:mm\:ss", null);
 
-            Console.Write(".".Repeat(Console.WindowWidth - _startTextLength - done.Length - 12));
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.Write(done);
-            Console.ResetColor();
-            Console.Write(" ".Repeat(11 - doneTime.Length));
-            Console.Write(doneTime);
-            Console.WriteLine();
+            System.Console.Write(".".Repeat(System.Console.WindowWidth - _startTextLength - done.Length - 12));
+            System.Console.ForegroundColor = ConsoleColor.DarkGreen;
+            System.Console.Write(done);
+            System.Console.ResetColor();
+            System.Console.Write(" ".Repeat(11 - doneTime.Length));
+            System.Console.Write(doneTime);
+            System.Console.WriteLine();
         }
 
         /// <inheritdoc />
@@ -48,11 +48,11 @@ namespace Tibia.Service
         public void LogError(string errorText)
         {
             const string error = "Error";
-            Console.Write(".".Repeat(Console.WindowWidth - _startTextLength - error.Length - 12));
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(error);
-            Console.ResetColor();
-            Console.WriteLine(errorText);
+            System.Console.Write(".".Repeat(System.Console.WindowWidth - _startTextLength - error.Length - 12));
+            System.Console.ForegroundColor = ConsoleColor.DarkRed;
+            System.Console.WriteLine(error);
+            System.Console.ResetColor();
+            System.Console.WriteLine(errorText);
         }
 
         /// <inheritdoc />
@@ -63,7 +63,7 @@ namespace Tibia.Service
         /// <param name="args">The arguments.</param>
         public void Log(string text, params object[] args)
         {
-            Console.WriteLine("[{0}] {1}", DateTime.UtcNow.ToString("dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture), string.Format(text, args));
+            System.Console.WriteLine("[{0}] {1}", DateTime.UtcNow.ToString("dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture), string.Format(text, args));
         }
     }
 }
