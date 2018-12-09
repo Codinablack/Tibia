@@ -26,7 +26,7 @@ namespace Tibia.Communications.Commands
         /// </returns>
         public override bool CanExecute(ICharacterSpawn caster, params string[] args)
         {
-            return !caster.Creature.Settings.CanSeeDiagnostics;
+            return caster.Creature.Settings.CanSeeDiagnostics;
         }
 
         /// <inheritdoc />
