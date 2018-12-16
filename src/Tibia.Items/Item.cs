@@ -209,7 +209,7 @@ namespace Tibia.Items
         /// <value>
         ///     The render priority.
         /// </value>
-        public RenderPriority RenderPriority { get; protected set; } = RenderPriority.Lowest;
+        public RenderPriority RenderPriority { get; set; } = RenderPriority.Lowest;
 
         /// <inheritdoc />
         /// <summary>

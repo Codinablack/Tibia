@@ -96,7 +96,7 @@ namespace Tibia.Creatures
         /// <value>
         ///     The render priority.
         /// </value>
-        public RenderPriority RenderPriority { get; } = RenderPriority.Medium;
+        public RenderPriority RenderPriority { get; set; } = RenderPriority.Medium;
 
         /// <inheritdoc />
         /// <summary>

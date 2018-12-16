@@ -219,7 +219,7 @@ namespace Tibia.Windows.Console
             _characterSpawn.HeadId = null;
             _characterSpawn.Health.Current = 100;
             _characterSpawn.Health.Maximum = 1000;
-            _characterSpawn.Id = 0;
+            _characterSpawn.Id = 0x10000001;
             //characterSpawn.IsDead = false;
             //characterSpawn.IsDrunk = false;
             //characterSpawn.IsExhausted = false;
@@ -321,7 +321,7 @@ namespace Tibia.Windows.Console
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;
-            _characterSpawn.StackPosition = 1;
+            _characterSpawn.StackPosition = 3;
             _characterSpawn.Torso = null;
             _characterSpawn.TorsoId = null;
             _characterSpawn.TownId = 1;
@@ -660,7 +660,7 @@ namespace Tibia.Windows.Console
             _characterSpawn.HeadId = null;
             _characterSpawn.Health.Current = 100;
             _characterSpawn.Health.Maximum = 1000;
-            _characterSpawn.Id = 0;
+            _characterSpawn.Id = 0x10000001;
             //characterSpawn.IsDead = false;
             //characterSpawn.IsDrunk = false;
             //characterSpawn.IsExhausted = false;
@@ -762,7 +762,7 @@ namespace Tibia.Windows.Console
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;
-            _characterSpawn.StackPosition = 1;
+            _characterSpawn.StackPosition = 3;
             _characterSpawn.Torso = null;
             _characterSpawn.TorsoId = null;
             _characterSpawn.TownId = 1;

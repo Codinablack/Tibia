@@ -8,7 +8,7 @@
         /// <value>
         ///     The render priority.
         /// </value>
-        RenderPriority RenderPriority { get; }
+        RenderPriority RenderPriority { get; set; }
 
         /// <summary>
         ///     Gets or sets the name.
