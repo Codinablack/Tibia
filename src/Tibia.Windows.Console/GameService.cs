@@ -302,22 +302,7 @@ namespace Tibia.Windows.Console
                 NextLevelExperience = 1100
             };
 
-            ITile tile = _tileService.GetTileByPosition(new Vector3(168, 493, 7));
-            //Tile tile = new Tile();
-            //tile.Flags = TileFlags.None;
-            //tile.Position = new Vector3(168, 492, 7);
-            //tile.Items.Add(new ItemSpawn
-            //{
-            //    Item = _itemService.GetItemById(406),
-            //    ItemId = 406,
-            //    LightInfo = new LightInfo
-            //    {
-            //        Color = LightColor.Default,
-            //        Level = LightLevel.Torch
-            //    },
-            //    StackPosition = 0,
-            //    Tile = tile
-            //});
+            ITile tile = _tileService.GetTileByPosition(new Vector3(166, 492, 7));
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;
@@ -743,22 +728,7 @@ namespace Tibia.Windows.Console
                 NextLevelExperience = 1100
             };
 
-            ITile tile = _tileService.GetTileByPosition(new Vector3(168, 493, 7));
-            //Tile tile = new Tile();
-            //tile.Flags = TileFlags.None;
-            //tile.Position = new Vector3(168, 492, 7);
-            //tile.Items.Add(new ItemSpawn
-            //{
-            //    Item = _itemService.GetItemById(406),
-            //    ItemId = 406,
-            //    LightInfo = new LightInfo
-            //    {
-            //        Color = LightColor.Default,
-            //        Level = LightLevel.Torch
-            //    },
-            //    StackPosition = 0,
-            //    Tile = tile
-            //});
+            ITile tile = _tileService.GetTileByPosition(new Vector3(166, 492, 7));
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;

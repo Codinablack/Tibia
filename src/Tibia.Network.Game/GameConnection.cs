@@ -515,7 +515,12 @@ namespace Tibia.Network.Game
             UnregisterTileCreature(creatureSpawn);
             creatureSpawn.Direction = targetDirection;
             creatureSpawn.Tile = targetTile;
-            creatureSpawn.StackPosition = (byte) (creatureSpawn.Tile.Items.Count + 1);
+
+            byte newStackPosition = (byte) targetTile.GetItemsBeforeMediumPriority().Count(s => s.Item.IsAlwaysOnTop);
+            if (targetTile.Ground != null)
+                newStackPosition++;
+
+            creatureSpawn.StackPosition = newStackPosition;
             RegisterTileCreature(creatureSpawn);
 
             // TODO: Close containers that are not nearby
@@ -909,7 +914,7 @@ namespace Tibia.Network.Game
             RegisterTileCreature(CharacterSpawn);
 
             // TODO: The range of spectatorship should probably be set once and be available through the server => new Vector3(10, 10, 3)
-            foreach (ICharacterSpawn spectator in _tileService.GetSpectators(CharacterSpawn.Tile.Position, new Vector3(10, 10, 3)))
+            foreach (ICharacterSpawn spectator in _tileService.GetSpectators(CharacterSpawn.Tile.Position, new Vector3(10, 10, 3)).Where(s => s != CharacterSpawn))
                 spectator.Connection.SendTileAddCreature(CharacterSpawn, CharacterSpawn.Tile.Position, CharacterSpawn.StackPosition);
 
             // TODO: Improve multiple channel registrations
