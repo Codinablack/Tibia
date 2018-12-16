@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Tibia.Data
+﻿namespace Tibia.Data
 {
     public interface IContainerItemSpawn
     {
@@ -13,19 +11,27 @@ namespace Tibia.Data
         bool IsFull { get; }
 
         /// <summary>
-        ///     Gets or sets the items.
-        /// </summary>
-        /// <value>
-        ///     The items.
-        /// </value>
-        ICollection<IItemSpawn> Items { get; set; }
-
-        /// <summary>
         ///     Gets or sets the parent.
         /// </summary>
         /// <value>
         ///     The parent.
         /// </value>
         IContainerItemSpawn Parent { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the count.
+        /// </summary>
+        /// <value>
+        ///     The count.
+        /// </value>
+        byte Count { get; }
+
+        /// <summary>
+        ///     Gets or sets the volume.
+        /// </summary>
+        /// <value>
+        ///     The volume.
+        /// </value>
+        byte Volume { get; set; }
     }
 }

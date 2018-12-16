@@ -3,13 +3,13 @@ using Tibia.Data;
 
 namespace Tibia.Spawns
 {
-    public class ContainerSpawnFeature : ItemSpawnFeatureBase, IContainerItemSpawn
+    public class ContainerItemSpawn : ItemSpawn, IContainerItemSpawn
     {
         /// <inheritdoc />
         /// <summary>
-        ///     Initializes a new instance of the <see cref="T:Tibia.Spawns.ContainerSpawnFeature" /> class.
+        ///     Initializes a new instance of the <see cref="T:Tibia.Spawns.ContainerItemSpawn" /> class.
         /// </summary>
-        public ContainerSpawnFeature()
+        public ContainerItemSpawn()
         {
             Items = new HashSet<IItemSpawn>();
         }
@@ -23,6 +23,22 @@ namespace Tibia.Spawns
         /// </value>
         public IContainerItemSpawn Parent { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the count.
+        /// </summary>
+        /// <value>
+        ///     The count.
+        /// </value>
+        public byte Count => (byte) Items.Count;
+
+        /// <summary>
+        ///     Gets or sets the volume.
+        /// </summary>
+        /// <value>
+        ///     The volume.
+        /// </value>
+        public byte Volume { get; set; }
+
         /// <inheritdoc />
         /// <summary>
         ///     Gets a value indicating whether this instance is full.
@@ -30,18 +46,14 @@ namespace Tibia.Spawns
         /// <value>
         ///     <c>true</c> if this instance is full; otherwise, <c>false</c>.
         /// </value>
-        public bool IsFull
-        {
-            get { return Items.Count == this.GetFeature<IContainer>().Volume; }
-        }
+        public bool IsFull => Items.Count == Volume;
 
-        /// <inheritdoc />
         /// <summary>
         ///     Gets or sets the items.
         /// </summary>
         /// <value>
         ///     The items.
         /// </value>
-        public ICollection<IItemSpawn> Items { get; set; }
+        protected ICollection<IItemSpawn> Items { get; }
     }
 }

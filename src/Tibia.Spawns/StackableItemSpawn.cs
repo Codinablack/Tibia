@@ -2,9 +2,8 @@
 
 namespace Tibia.Spawns
 {
-    public class StackableSpawnFeature : ItemSpawnFeatureBase, IStackableItemSpawn
+    public class StackableItemSpawn : ItemSpawn, IStackableItemSpawn
     {
-        /// <inheritdoc />
         /// <summary>
         ///     Gets or sets the count.
         /// </summary>

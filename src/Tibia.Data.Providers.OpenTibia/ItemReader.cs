@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Tibia.Items;
-using Tibia.Items.Features;
 
 namespace Tibia.Data.Providers.OpenTibia
 {
@@ -81,58 +80,58 @@ namespace Tibia.Data.Providers.OpenTibia
                 ItemFlags itemFlags = (ItemFlags) propertyReader.ReadUInt32();
 
                 if (itemFlags.HasFlag(ItemFlags.Stackable))
-                    item.Features.Add(new StackableFeature(100));
+                    item.IsStackable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Pickupable))
-                    item.Features.Add(new PickupableFeature());
+                    item.IsPickupable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.SolidBlock))
-                    item.Features.Add(new SolidBlockFeature());
+                    item.IsSolidBlock = true;
 
                 if (itemFlags.HasFlag(ItemFlags.ProjectileBlocker))
-                    item.Features.Add(new ProjectileBlockerFeature());
+                    item.IsProjectileBlocker = true;
 
                 if (itemFlags.HasFlag(ItemFlags.PathBlocker))
-                    item.Features.Add(new PathBlockerFeature());
+                    item.IsPathBlocker = true;
 
                 if (itemFlags.HasFlag(ItemFlags.HasHeight))
-                    item.Features.Add(new HeightFeature());
+                    item.HasHeight = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Useable))
-                    item.Features.Add(new UseableFeature());
+                    item.IsUseable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Moveable))
-                    item.Features.Add(new MoveableFeature());
+                    item.IsMoveable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.AlwaysOnTop))
-                    item.Features.Add(new AlwaysOnTopFeature());
+                    item.IsAlwaysOnTop = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Vertical))
-                    item.Features.Add(new VerticalFeature());
+                    item.IsVertical = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Horizontal))
-                    item.Features.Add(new HorizontalFeature());
+                    item.IsHorizontal = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Hangable))
-                    item.Features.Add(new HangableFeature());
+                    item.IsHangable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.DistanceReadable))
-                    item.Features.Add(new DistanceReadableFeature());
+                    item.IsDistanceReadable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Rotatable))
-                    item.Features.Add(new RotatableFeature());
+                    item.IsRotatable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Readable))
-                    item.Features.Add(new ReadableFeature());
+                    item.IsReadable = true;
 
                 if (itemFlags.HasFlag(ItemFlags.LookThrough))
-                    item.Features.Add(new LookThroughFeature());
+                    item.IsLookThrough = true;
 
                 if (itemFlags.HasFlag(ItemFlags.Animation))
-                    item.Features.Add(new AnimationFeature());
+                    item.IsAnimation = true;
 
                 if (itemFlags.HasFlag(ItemFlags.ForceUse))
-                    item.Features.Add(new ForceUseFeature());
+                    item.IsForceUse = true;
 
                 while (propertyReader.PeekChar() != -1)
                 {
@@ -155,7 +154,7 @@ namespace Tibia.Data.Providers.OpenTibia
                         case ItemAttribute.TopOrder:
                             // TODO: item.TileStackOrder = propertyReader.ReadTileStackOrder();
                             propertyReader.Skip(dataLength);
-                            //propertyReader.ReadByte();
+                            // propertyRader.ReadByte();
                             break;
                         case ItemAttribute.WareId:
                             // TODO: This should probably use a service to have a reference (e.g: item.WriteOnceItem [IItem])

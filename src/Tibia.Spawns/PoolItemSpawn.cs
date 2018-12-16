@@ -1,6 +1,8 @@
-﻿namespace Tibia.Data
+﻿using Tibia.Data;
+
+namespace Tibia.Spawns
 {
-    public interface IPool
+    public class PoolItemSpawn : ItemSpawn, IPoolItemSpawn
     {
         /// <summary>
         ///     Gets or sets the fluid.
@@ -8,6 +10,6 @@
         /// <value>
         ///     The fluid.
         /// </value>
-        IFluid Fluid { get; set; }
+        public IFluid Fluid { get; set; }
     }
 }

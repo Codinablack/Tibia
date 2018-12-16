@@ -19,13 +19,5 @@ namespace Tibia.Data
         ///     The item identifier.
         /// </value>
         int ItemId { get; set; }
-
-        /// <summary>
-        ///     Gets the features.
-        /// </summary>
-        /// <value>
-        ///     The features.
-        /// </value>
-        ICollection<IItemSpawnFeature> Features { get; }
     }
 }

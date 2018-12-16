@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Tibia.Data;
-using Tibia.Items.Features;
 
 namespace Tibia.Map
 {
@@ -17,7 +16,7 @@ namespace Tibia.Map
         public static bool IsWalkable(this ITile tile)
         {
             // TODO: This implementation is not efficient and will be replaced with simple properties in IItem class
-            return tile.Ground != null && !tile.Ground.Item.Features.Any(s => s is SolidBlockFeature);
+            return tile.Ground != null && !tile.Ground.Item.IsSolidBlock;
         }
 
         /// <summary>

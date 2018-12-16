@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Linq;
 using Tibia.Data;
 using Tibia.InteropServices;
-using Tibia.Items.Features;
+using Tibia.Spawns;
 
 namespace Tibia.Network
 {
@@ -105,20 +104,13 @@ namespace Tibia.Network
             // TODO: MARK_UNMARKED
             message.AddByte(0xFF);
 
-            IStackableItemSpawn stackableItemSpawn = itemSpawn.GetFeature<IStackableItemSpawn>();
-            if (stackableItemSpawn != null)
+            if (itemSpawn is IStackableItemSpawn stackableItemSpawn)
                 message.AddByte((byte) stackableItemSpawn.Count);
-            else
-            {
-                // TODO: Replace feature with properties
-                PoolFeature poolFeature = itemSpawn.GetFeature<PoolFeature>();
-                if (poolFeature != null)
-                    message.AddByte((byte) poolFeature.Fluid.Color);
-            }
+            else if (itemSpawn is IPoolItemSpawn poolItemSpawn)
+                message.AddByte((byte) poolItemSpawn.Fluid.Color);
 
-            // TODO: Replace feature with properties
             // TODO: Random phase (0xFF for async)
-            if (itemSpawn.Item.Features.Any(s => s is AnimationFeature))
+            if (itemSpawn.Item.IsAnimation)
                 message.AddByte(0xFE);
         }
 

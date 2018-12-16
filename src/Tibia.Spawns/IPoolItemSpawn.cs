@@ -1,16 +1,15 @@
 ﻿using Tibia.Data;
 
-namespace Tibia.Items.Features
+namespace Tibia.Spawns
 {
-    public class PoolFeature : ItemFeatureBase, IPool
+    public interface IPoolItemSpawn
     {
-        /// <inheritdoc />
         /// <summary>
         ///     Gets or sets the fluid.
         /// </summary>
         /// <value>
         ///     The fluid.
         /// </value>
-        public IFluid Fluid { get; set; }
+        IFluid Fluid { get; set; }
     }
 }
