@@ -13,18 +13,14 @@ namespace Tibia.Map
         {
             X = x;
             Y = y;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the x.
         /// </summary>
         /// <value>
         ///     The x.
         /// </value>
-        public int X { get; }
-
-        /// <inheritdoc />
+        public int X { get; }
         /// <summary>
         ///     Gets or sets the y.
         /// </summary>

@@ -3,8 +3,7 @@
 namespace Tibia.Spawns
 {
     public class Summon : MonsterSpawn, ISummon
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the master.
         /// </summary>

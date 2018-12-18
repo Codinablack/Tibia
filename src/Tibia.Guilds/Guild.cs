@@ -11,27 +11,21 @@ namespace Tibia.Guilds
         public Guild()
         {
             Ranks = new List<IGuildRank>();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the name.
         /// </summary>
         /// <value>
         ///     The name.
         /// </value>
-        public string Name { get; set; }
-
-        /// <inheritdoc />
+        public string Name { get; set; }
         /// <summary>
         ///     Gets or sets the ranks.
         /// </summary>
         /// <value>
         ///     The ranks.
         /// </value>
-        public List<IGuildRank> Ranks { get; set; }
-
-        /// <inheritdoc />
+        public List<IGuildRank> Ranks { get; set; }
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>

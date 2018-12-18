@@ -3,8 +3,7 @@
 namespace Tibia.Data
 {
     public class QueriedChannelEventArgs : EventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.QueriedChannelEventArgs" /> class.
         /// </summary>

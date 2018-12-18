@@ -33,5 +33,13 @@
         ///     The volume.
         /// </value>
         byte Volume { get; set; }
+
+        /// <summary>
+        ///     Attempts to get the item from the collection of items with the specified index.
+        /// </summary>
+        /// <param name="index">The index.</param>
+        /// <param name="itemSpawn">The item spawn.</param>
+        /// <returns><c>true</c> if the item is successfully obtained.</returns>
+        bool TryGetItemByIndex(byte index, out IItemSpawn itemSpawn);
     }
 }

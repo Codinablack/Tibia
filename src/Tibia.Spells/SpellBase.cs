@@ -10,8 +10,7 @@ namespace Tibia.Spells
         /// </summary>
         /// <value>
         ///     The interval.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public TimeSpan Interval { get; set; }
 
         /// <summary>
@@ -19,8 +18,7 @@ namespace Tibia.Spells
         /// </summary>
         /// <value>
         ///     The identifier.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public byte Id { get; set; }
 
         /// <summary>
@@ -28,8 +26,7 @@ namespace Tibia.Spells
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public string Name { get; set; }
     }
 }

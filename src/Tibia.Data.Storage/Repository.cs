@@ -16,9 +16,7 @@ namespace Tibia.Data.Storage
         public Repository()
         {
             _items = new HashSet<TEntity>();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets all.
         /// </summary>
@@ -28,9 +26,7 @@ namespace Tibia.Data.Storage
         public ICollection<TEntity> GetAll()
         {
             return _items;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Creates the specified item.
         /// </summary>
@@ -42,9 +38,7 @@ namespace Tibia.Data.Storage
         {
             _items.Add(item);
             return true;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Deletes the specified identifier.
         /// </summary>
@@ -60,9 +54,7 @@ namespace Tibia.Data.Storage
 
             _items.Remove(item);
             return true;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets the item with a specified identifier.
         /// </summary>
@@ -73,9 +65,7 @@ namespace Tibia.Data.Storage
         public TEntity Get(TIdentifier id)
         {
             return _items.FirstOrDefault(s => !EqualityComparer<TIdentifier>.Default.Equals(s.Id, id));
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Saves the changes.
         /// </summary>

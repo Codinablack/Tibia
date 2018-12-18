@@ -13,6 +13,14 @@ namespace Tibia.Data
         int Z { get; }
 
         /// <summary>
+        ///     Gets the type.
+        /// </summary>
+        /// <value>
+        ///     The type.
+        /// </value>
+        Vector3Type Type { get; }
+
+        /// <summary>
         ///     Gets the direction.
         /// </summary>
         /// <param name="targetPosition">The target position.</param>

@@ -177,5 +177,13 @@ namespace Tibia.Data
         /// </summary>
         /// <param name="friend">The friend.</param>
         void SendFriend(IFriend friend);
+
+        /// <summary>
+        ///     Sends the tile add item.
+        /// </summary>
+        /// <param name="itemSpawn">The item spawn.</param>
+        /// <param name="targetTilePosition">The position.</param>
+        /// <param name="stackPosition">The stack position.</param>
+        void SendTileAddItem(IItemSpawn itemSpawn, IVector3 targetTilePosition, byte stackPosition);
     }
 }

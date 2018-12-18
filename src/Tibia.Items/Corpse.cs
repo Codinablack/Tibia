@@ -3,17 +3,14 @@
 namespace Tibia.Items
 {
     public class Corpse : ICorpse
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>
         /// <value>
         ///     The identifier.
         /// </value>
-        public uint Id { get; set; }
-
-        /// <inheritdoc />
+        public uint Id { get; set; }
         /// <summary>
         ///     Gets or sets the sprite identifier.
         /// </summary>

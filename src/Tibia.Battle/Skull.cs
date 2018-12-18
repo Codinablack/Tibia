@@ -4,17 +4,14 @@ using System;
 namespace Tibia.Battle
 {
     public class Skull : ISkull
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the type.
         /// </summary>
         /// <value>
         ///     The type.
         /// </value>
-        public SkullType Type { get; set; }
-
-        /// <inheritdoc />
+        public SkullType Type { get; set; }
         /// <summary>
         ///     Gets or sets the time.
         /// </summary>

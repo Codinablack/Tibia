@@ -24,6 +24,7 @@ using Tibia.Outfits;
 using Tibia.Data.Providers.Ultimate;
 using Tibia.Data.Providers.Ultimate.Services;
 using Tibia.Data.Providers.OpenTibia;
+using Tibia.Network.Game.Events;
 using Tibia.Security.Cryptography;
 using Tibia.Spawns;
 using Tibia.Spells;
@@ -82,7 +83,7 @@ namespace Tibia.Windows.Console
             foreach (SpawnSource spawnSource in spawnSources)
             foreach (MonsterSpawnSettings monsterSettings in spawnSource.Spawns.OfType<MonsterSpawnSettings>())
             {
-                ITile tile = _tileService.GetTileByPosition(monsterSettings.AbsolutePosition);
+                ITile tile = _tileService.Tile(monsterSettings.AbsolutePosition);
 
                 // TODO: This should throw an exception because it means it's an invalid position
                 if (tile == null)
@@ -130,7 +131,7 @@ namespace Tibia.Windows.Console
                 monsterSpawn.Mount = monsterSpawn.Monster.Mount;
 
                 _creatureSpawnService.RegisterCreature(monsterSpawn);
-                _tileService.RegisterCreature(monsterSpawn);
+                _tileService.AddCreature(monsterSpawn);
             }
         }
 
@@ -302,7 +303,7 @@ namespace Tibia.Windows.Console
                 NextLevelExperience = 1100
             };
 
-            ITile tile = _tileService.GetTileByPosition(new Vector3(166, 492, 7));
+            ITile tile = _tileService.Tile(new Vector3(166, 492, 7));
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;
@@ -380,8 +381,12 @@ namespace Tibia.Windows.Console
             _npcService = new NpcService(npcs);
             Logger.LogDone();
 
+            Logger.LogStart(">> Initializing tile services");
+            _tileService = new TileService();
+            Logger.LogDone();
+
             Logger.LogStart(">> Loading map");
-            MapReader mapReader = new MapReader(_itemService);
+            MapReader mapReader = new MapReader(_itemService, _tileService);
             WorldMap map = await mapReader.LoadAsync(Settings.Default.Map_Otb);
             Logger.LogDone();
 
@@ -414,10 +419,6 @@ namespace Tibia.Windows.Console
 
             Logger.LogStart(">> Initializing town services");
             _townService = new TownService(map.Towns.Values);
-            Logger.LogDone();
-
-            Logger.LogStart(">> Initializing tile services");
-            _tileService = new TileService(map.Tiles.Values);
             Logger.LogDone();
 
             // TODO: Remove this after project is complete
@@ -728,7 +729,7 @@ namespace Tibia.Windows.Console
                 NextLevelExperience = 1100
             };
 
-            ITile tile = _tileService.GetTileByPosition(new Vector3(166, 492, 7));
+            ITile tile = _tileService.Tile(new Vector3(166, 492, 7));
 
             // TODO: This has to be a valid tile of the map
             _characterSpawn.Tile = tile;

@@ -4,8 +4,7 @@ using Tibia.Map;
 namespace Tibia.Data.Providers.OpenTibia
 {
     public class MapStreamReader : StreamReaderBase, IMapStreamReader
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.Providers.OpenTibia.MapStreamReader" /> class.
         /// </summary>
@@ -13,9 +12,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public MapStreamReader(Stream stream)
             : base(stream)
         {
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the vector3.
         /// </summary>
@@ -23,9 +20,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public Vector3 ReadVector3()
         {
             return new Vector3(ReadUInt16(), ReadUInt16(), ReadByte());
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the metadata.
         /// </summary>
@@ -40,9 +35,7 @@ namespace Tibia.Data.Providers.OpenTibia
                 MaxItemSchemaVersion = ReadUInt32(),
                 MinItemSchemaVersion = ReadUInt32()
             };
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the vector2.
         /// </summary>

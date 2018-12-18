@@ -13,18 +13,14 @@ namespace Tibia.Map
         {
             Name = name;
             Position = position;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the position.
         /// </summary>
         /// <value>
         ///     The position.
         /// </value>
-        public IVector3 Position { get; }
-
-        /// <inheritdoc />
+        public IVector3 Position { get; }
         /// <summary>
         ///     Gets or sets the name.
         /// </summary>

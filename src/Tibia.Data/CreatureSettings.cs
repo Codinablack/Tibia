@@ -73,6 +73,7 @@
         ///     <c>true</c> if this instance is attackable; otherwise, <c>false</c>.
         /// </value>
         public bool IsAttackable { get; set; }
+
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is convinceable.
         /// </summary>
@@ -112,5 +113,19 @@
         ///     <c>true</c> if this instance is summonable; otherwise, <c>false</c>.
         /// </value>
         public bool IsSummonable { get; set; }
+
+        /// <summary>
+        ///     Determines whether this instance [can teleport object] the specified spawn.
+        /// </summary>
+        /// <param name="spawn">The spawn.</param>
+        /// <returns>
+        ///     <see langword="true" /> if this instance [can teleport object] the specified spawn; otherwise,
+        ///     <see langword="false" />.
+        /// </returns>
+        public bool CanTeleportObject(ISpawn spawn)
+        {
+            // TODO: This should return a value based on rank/permissions and the spawn passed (e.g.: items can be moved but not creatures)
+            return true;
+        }
     }
 }

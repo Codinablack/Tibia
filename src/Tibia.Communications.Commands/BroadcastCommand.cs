@@ -21,11 +21,8 @@ namespace Tibia.Communications.Commands
         /// </summary>
         /// <value>
         ///     The keyword.
-        /// </value>
-        /// <inheritdoc />
-        public override string Keyword { get; } = "/b";
-
-        /// <inheritdoc />
+        /// </value>
+        public override string Keyword { get; } = "/b";
         /// <summary>
         ///     Gets a value indicating whether the text should be posted in the channel.
         /// </summary>
@@ -37,9 +34,7 @@ namespace Tibia.Communications.Commands
         public override bool PostInChannel(ICharacterSpawn caster, params string[] args)
         {
             return !caster.Creature.Settings.CanBroadcast;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether this instance can be executed by the caster.
         /// </summary>
@@ -52,9 +47,7 @@ namespace Tibia.Communications.Commands
         public override bool CanExecute(ICharacterSpawn caster, params string[] args)
         {
             return caster.Creature.Settings.CanBroadcast;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Executes the command.
         /// </summary>

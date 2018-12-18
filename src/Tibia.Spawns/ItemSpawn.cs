@@ -3,17 +3,14 @@
 namespace Tibia.Spawns
 {
     public class ItemSpawn : SpawnBase, IItemSpawn
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the item identifier.
         /// </summary>
         /// <value>
         ///     The item identifier.
         /// </value>
-        public int ItemId { get; set; }
-
-        /// <inheritdoc />
+        public int ItemId { get; set; }
         /// <summary>
         ///     Gets or sets the item.
         /// </summary>

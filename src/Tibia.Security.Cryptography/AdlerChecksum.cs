@@ -22,9 +22,7 @@ namespace Tibia.Security.Cryptography
         /// <summary>
         ///     Get Adler-32 checksum value for the last calculation.
         /// </summary>
-        public uint ChecksumValue { get; private set; }
-
-        /// <inheritdoc />
+        public uint ChecksumValue { get; private set; }
         /// <summary>
         ///     Determines whether this instance and another specified
         ///     <see cref="T:Tibia.Security.Cryptography.AdlerChecksum" /> object have the same value.

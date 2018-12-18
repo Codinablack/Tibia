@@ -69,7 +69,7 @@ namespace Tibia.Network.Game.Packets
                 for (int ny = 0; ny < height; ny++)
                 {
                     Vector3 tilePosition = new Vector3(position.X + nx + offset, position.Y + ny + offset, position.Z);
-                    ITile tile = tileService.GetTileByPosition(tilePosition);
+                    ITile tile = tileService.Tile(tilePosition);
                     if (tile != null)
                     {
                         if (skip >= 0)
@@ -126,7 +126,7 @@ namespace Tibia.Network.Game.Packets
                 count = 0;
             }
 
-            foreach (IItemSpawn item in tile.GetItemsBeforeMediumPriority())
+            foreach (IItemSpawn item in tileService.GetItemsBeforeMediumPriority(tile))
             {
                 message.AddItemSpawn(item);
                 // TODO: These magic numbers should not be hard-coded
@@ -134,7 +134,7 @@ namespace Tibia.Network.Game.Packets
                     return;
             }
 
-            foreach (ICreatureSpawn creature in tileService.GetCreaturesByPosition(tile.Position))
+            foreach (ICreatureSpawn creature in tileService.Creatures(tile.Position))
             {
                 if (!characterSpawn.CanSee(creature))
                     continue;
@@ -147,7 +147,7 @@ namespace Tibia.Network.Game.Packets
                     return;
             }
 
-            foreach (IItemSpawn item in tile.GetItemsAfterMediumPriority())
+            foreach (IItemSpawn item in tileService.GetItemsAfterMediumPriority(tile))
             {
                 message.AddItemSpawn(item);
                 // TODO: These magic numbers should not be hard-coded

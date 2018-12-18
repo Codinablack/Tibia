@@ -3,8 +3,7 @@
 namespace Tibia.Map
 {
     public class LightInfo : ILightInfo
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Map.LightInfo" /> class.
         /// </summary>
@@ -22,18 +21,14 @@ namespace Tibia.Map
         {
             Level = level;
             Color = color;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets the color.
         /// </summary>
         /// <value>
         ///     The color.
         /// </value>
-        public byte Color { get; set; }
-
-        /// <inheritdoc />
+        public byte Color { get; set; }
         /// <summary>
         ///     Gets the level.
         /// </summary>

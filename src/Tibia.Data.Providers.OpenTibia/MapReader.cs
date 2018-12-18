@@ -12,17 +12,18 @@ namespace Tibia.Data.Providers.OpenTibia
     public class MapReader : MapFileReader, IDisposable
     {
         private readonly ItemService _itemService;
+        private readonly TileService _tileService;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="MapReader" /> class.
         /// </summary>
         /// <param name="itemService">The item service.</param>
-        public MapReader(ItemService itemService)
+        /// <param name="tileService">The tile service.</param>
+        public MapReader(ItemService itemService, TileService tileService)
         {
             _itemService = itemService;
-        }
-
-        /// <inheritdoc />
+            _tileService = tileService;
+        }
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
@@ -337,16 +338,18 @@ namespace Tibia.Data.Providers.OpenTibia
 
             if (item.GroupType == ItemGroupType.Ground && tile.Ground == null)
             {
-                tile.Ground = new ItemSpawn
+                _tileService.AddGround(new ItemSpawn
                 {
-                    Item = item
-                };
+                    Item = item,
+                    Tile = tile
+                });
                 return;
             }
 
-            tile.Items.Add(new ItemSpawn
+            _tileService.AddItem(new ItemSpawn
             {
-                Item = item
+                Item = item,
+                Tile = tile
             });
         }
     }

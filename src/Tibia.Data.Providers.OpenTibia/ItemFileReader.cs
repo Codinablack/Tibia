@@ -3,8 +3,7 @@
 namespace Tibia.Data.Providers.OpenTibia
 {
     public class ItemFileReader : FileReaderBase<ItemStreamReader>
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Reads the property.
         /// </summary>

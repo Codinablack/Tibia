@@ -9,8 +9,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override string Name => "World Chat";
 
         /// <summary>
@@ -18,11 +17,8 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The type.
-        /// </value>
-        /// <inheritdoc />
-        public override ChannelType Type => ChannelType.World;
-
-        /// <inheritdoc />
+        /// </value>
+        public override ChannelType Type => ChannelType.World;
         /// <summary>
         ///     Gets the minimum level.
         /// </summary>

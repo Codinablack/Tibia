@@ -6,8 +6,7 @@ using Tibia.Items;
 namespace Tibia.Data.Providers.OpenTibia
 {
     public class ItemReader : ItemFileReader, IDisposable
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>

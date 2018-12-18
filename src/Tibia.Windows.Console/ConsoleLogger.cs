@@ -7,9 +7,7 @@ namespace Tibia.Windows.Console
     public class ConsoleLogger : ILogger
     {
         private int _startTextLength;
-        private readonly Stopwatch _taskTimer = new Stopwatch();
-
-        /// <inheritdoc />
+        private readonly Stopwatch _taskTimer = new Stopwatch();
         /// <summary>
         ///     Logs the start.
         /// </summary>
@@ -20,9 +18,7 @@ namespace Tibia.Windows.Console
             string formattedText = $"[{DateTime.UtcNow.ToString("dd MMM yyyy HH:mm:ss", CultureInfo.InvariantCulture)}] {text}...";
             System.Console.Write(formattedText);
             _startTextLength = formattedText.Length;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Logs the done.
         /// </summary>
@@ -38,9 +34,7 @@ namespace Tibia.Windows.Console
             System.Console.Write(" ".Repeat(11 - doneTime.Length));
             System.Console.Write(doneTime);
             System.Console.WriteLine();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Logs the error.
         /// </summary>
@@ -53,9 +47,7 @@ namespace Tibia.Windows.Console
             System.Console.WriteLine(error);
             System.Console.ResetColor();
             System.Console.WriteLine(errorText);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Logs the specified text.
         /// </summary>

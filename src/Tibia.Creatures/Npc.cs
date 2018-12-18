@@ -4,8 +4,7 @@ using Tibia.Outfits;
 namespace Tibia.Creatures
 {
     public class Npc : Creature, INpc
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Creatures.Npc" /> class.
         /// </summary>
@@ -14,9 +13,7 @@ namespace Tibia.Creatures
             : base(CreatureType.Npc, speechBubble)
         {
             Outfit = new Outfit();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Creatures.Npc" /> class.
         /// </summary>

@@ -16,27 +16,21 @@ namespace Tibia.Map
             X = x;
             Y = y;
             Z = z;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the x.
         /// </summary>
         /// <value>
         ///     The x.
         /// </value>
-        public int X { get; }
-
-        /// <inheritdoc />
+        public int X { get; }
         /// <summary>
         ///     Gets or sets the y.
         /// </summary>
         /// <value>
         ///     The y.
         /// </value>
-        public int Y { get; }
-
-        /// <inheritdoc />
+        public int Y { get; }
         /// <summary>
         ///     Gets or sets the z.
         /// </summary>
@@ -45,7 +39,27 @@ namespace Tibia.Map
         /// </value>
         public int Z { get; }
 
-        /// <inheritdoc />
+        /// <summary>
+        ///     Gets the type.
+        /// </summary>
+        /// <value>
+        ///     The type.
+        /// </value>
+        public Vector3Type Type
+        {
+            get
+            {
+                if (X == 65535)
+                {
+                    if ((Y & 0x40) != 0)
+                        return Vector3Type.Container;
+
+                    return Vector3Type.Slot;
+                }
+
+                return Vector3Type.Ground;
+            }
+        }
         /// <summary>
         ///     Gets the direction.
         /// </summary>
@@ -56,9 +70,7 @@ namespace Tibia.Map
         public Direction GetDirection(IVector3 targetPosition)
         {
             return GetDirection(this, targetPosition);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether [is in range] [the specified target position].
         /// </summary>
@@ -70,9 +82,7 @@ namespace Tibia.Map
         public bool IsInRange(IVector3 targetPosition, IVector3 range)
         {
             return IsInRange(this, targetPosition, range);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether [is next to] [the specified target position].
         /// </summary>
@@ -84,9 +94,7 @@ namespace Tibia.Map
         public bool IsNextTo(IVector3 targetPosition, IVector3 range)
         {
             return IsInSameFloor(this, targetPosition) && IsInRange(this, targetPosition, range);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether [is in same floor] [the specified target position].
         /// </summary>
@@ -97,9 +105,7 @@ namespace Tibia.Map
         public bool IsInSameFloor(IVector3 targetPosition)
         {
             return IsInSameFloor(this, targetPosition);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets the offset of the specified direction.
         /// </summary>
@@ -149,9 +155,7 @@ namespace Tibia.Map
             }
 
             return new Vector3(x, y, z);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Equalses the specified other.
         /// </summary>

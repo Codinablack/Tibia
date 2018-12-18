@@ -8,8 +8,7 @@ using Tibia.Outfits;
 namespace Tibia.Spawns
 {
     public abstract class CreatureSpawn : SpawnBase, ICreatureSpawn
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Spawns.CreatureSpawn" /> class.
         /// </summary>
@@ -54,81 +53,63 @@ namespace Tibia.Spawns
         /// <value>
         ///     The exhaust condition.
         /// </value>
-        public ExhaustCondition ExhaustCondition { get; set; }
-
-        /// <inheritdoc />
+        public ExhaustCondition ExhaustCondition { get; set; }
         /// <summary>
         ///     Gets or sets the outfit.
         /// </summary>
         /// <value>
         ///     The outfit.
         /// </value>
-        public IOutfit Outfit { get; set; }
-
-        /// <inheritdoc />
+        public IOutfit Outfit { get; set; }
         /// <summary>
         ///     Gets or sets the direction.
         /// </summary>
         /// <value>
         ///     The direction.
         /// </value>
-        public Direction Direction { get; set; }
-
-        /// <inheritdoc />
+        public Direction Direction { get; set; }
         /// <summary>
         ///     Gets or sets the mount.
         /// </summary>
         /// <value>
         ///     The mount.
         /// </value>
-        public IMount Mount { get; set; }
-
-        /// <inheritdoc />
+        public IMount Mount { get; set; }
         /// <summary>
         ///     Gets or sets the war icon.
         /// </summary>
         /// <value>
         ///     The war icon.
         /// </value>
-        public WarIcon WarIcon { get; set; }
-
-        /// <inheritdoc />
+        public WarIcon WarIcon { get; set; }
         /// <summary>
         ///     Gets or sets the creature.
         /// </summary>
         /// <value>
         ///     The creature.
         /// </value>
-        public ICreature Creature { get; set; }
-
-        /// <inheritdoc />
+        public ICreature Creature { get; set; }
         /// <summary>
         ///     Gets or sets the skull.
         /// </summary>
         /// <value>
         ///     The skull.
         /// </value>
-        public ISkull Skull { get; set; }
-
-        /// <inheritdoc />
+        public ISkull Skull { get; set; }
         /// <summary>
         ///     Gets or sets the speed.
         /// </summary>
         /// <value>
         ///     The speed.
         /// </value>
-        public SpeedInfo Speed { get; set; }
-
-        /// <inheritdoc />
+        public SpeedInfo Speed { get; set; }
         /// <summary>
         ///     Gets or sets the health.
         /// </summary>
         /// <value>
         ///     The health.
         /// </value>
-        public IHealth Health { get; set; }
-
-        /// <inheritdoc />
+        public IHealth Health { get; set; }
         /// <summary>
         ///     Gets a value indicating whether this instance is dead.
         /// </summary>
@@ -138,18 +119,14 @@ namespace Tibia.Spawns
         public bool IsDead
         {
             get { return Health.Current <= 0; }
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the level.
         /// </summary>
         /// <value>
         ///     The level.
         /// </value>
-        public ILevel Level { get; set; }
-
-        /// <inheritdoc />
+        public ILevel Level { get; set; }
         /// <summary>
         ///     Gets a value indicating whether this instance is drunk.
         /// </summary>
@@ -159,9 +136,7 @@ namespace Tibia.Spawns
         public bool IsDrunk
         {
             get { return DrunkCondition != null; }
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets a value indicating whether this instance is exhausted.
         /// </summary>
@@ -171,9 +146,7 @@ namespace Tibia.Spawns
         public bool IsExhausted
         {
             get { return ExhaustCondition != null; }
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets a value indicating whether this instance is poisoned.
         /// </summary>
@@ -183,27 +156,21 @@ namespace Tibia.Spawns
         public bool IsPoisoned
         {
             get { return PoisonCondition != null; }
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>
         /// <value>
         ///     The identifier.
         /// </value>
-        public uint Id { get; set; }
-
-        /// <inheritdoc />
+        public uint Id { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is riding.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is riding; otherwise, <c>false</c>.
         /// </value>
-        public bool IsRiding { get; set; }
-
-        /// <inheritdoc />
+        public bool IsRiding { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is invisible.
         /// </summary>

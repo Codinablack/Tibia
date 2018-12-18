@@ -1,5 +1,4 @@
-﻿using Tibia.Map;
-using Tibia.Spawns;
+﻿using Tibia.Data;
 
 namespace Tibia.Network.Game.Packets
 {
@@ -12,7 +11,7 @@ namespace Tibia.Network.Game.Packets
         /// <param name="vector3">The vector3.</param>
         /// <param name="stackPosition">The stack position.</param>
         /// <param name="itemSpawn">The item spawn.</param>
-        public static void Add(NetworkMessage message, Vector3 vector3, byte stackPosition, ItemSpawn itemSpawn)
+        public static void Add(NetworkMessage message, IVector3 vector3, byte stackPosition, IItemSpawn itemSpawn)
         {
             message.AddPacketType(GamePacketType.TileAddArtifact);
             message.AddVector3(vector3);

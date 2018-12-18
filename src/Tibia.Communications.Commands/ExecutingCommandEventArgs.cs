@@ -4,8 +4,7 @@ using Tibia.Data;
 namespace Tibia.Communications.Commands
 {
     public class ExecutingCommandEventArgs : CancelEventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Communications.Commands.ExecutingCommandEventArgs" />
         ///     class.

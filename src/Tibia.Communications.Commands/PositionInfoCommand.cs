@@ -4,17 +4,14 @@ using Tibia.Data;
 namespace Tibia.Communications.Commands
 {
     public class PositionInfoCommand : CommandBase
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets the keyword.
         /// </summary>
         /// <value>
         ///     The keyword.
         /// </value>
-        public override string Keyword { get; } = "/position";
-
-        /// <inheritdoc />
+        public override string Keyword { get; } = "/position";
         /// <summary>
         ///     Determines whether this instance can be executed by the caster.
         /// </summary>
@@ -27,9 +24,7 @@ namespace Tibia.Communications.Commands
         public override bool CanExecute(ICharacterSpawn caster, params string[] args)
         {
             return caster.Creature.Settings.CanSeeDiagnostics;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets a value indicating whether the text should be posted in the channel.
         /// </summary>
@@ -45,9 +40,7 @@ namespace Tibia.Communications.Commands
 
             ITile currentTile = caster.Tile;
             return currentTile?.Position != null && currentTile.Ground?.Item != null;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Executes the command.
         /// </summary>

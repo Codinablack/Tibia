@@ -4,20 +4,15 @@ using Tibia.Data;
 namespace Tibia.Communications.Channels
 {
     public abstract class PublicQueryableChannel : PublicChannel, IQueryableChannel
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Occurs when the channel is querying.
         /// </summary>
-        public event EventHandler<QueryingChannelEventArgs> Querying;
-
-        /// <inheritdoc />
+        public event EventHandler<QueryingChannelEventArgs> Querying;
         /// <summary>
         ///     Occurs when the channel is queried.
         /// </summary>
-        public event EventHandler<QueriedChannelEventArgs> Queried;
-
-        /// <inheritdoc />
+        public event EventHandler<QueriedChannelEventArgs> Queried;
         /// <summary>
         ///     Queries the channel with the specified character spawn.
         /// </summary>

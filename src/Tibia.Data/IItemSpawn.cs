@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace Tibia.Data
+﻿namespace Tibia.Data
 {
-    public interface IItemSpawn
+    public interface IItemSpawn : ISpawn
     {
         /// <summary>
         ///     Gets or sets the item.

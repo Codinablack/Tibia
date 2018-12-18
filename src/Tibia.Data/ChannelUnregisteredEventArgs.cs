@@ -7,8 +7,7 @@ namespace Tibia.Data
         /// <summary>
         ///     Initializes a new instance of the <see cref="ChannelUnregisteredEventArgs" /> class.
         /// </summary>
-        /// <param name="characterSpawn">The character spawn.</param>
-        /// <inheritdoc />
+        /// <param name="characterSpawn">The character spawn.</param>
         public ChannelUnregisteredEventArgs(ICharacterSpawn characterSpawn)
         {
             CharacterSpawn = characterSpawn;

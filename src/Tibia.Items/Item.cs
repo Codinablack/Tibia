@@ -3,53 +3,42 @@
 namespace Tibia.Items
 {
     public class Item : IItem
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the article.
         /// </summary>
         /// <value>
         ///     The article.
         /// </value>
-        public string Article { get; set; }
-
-        /// <inheritdoc />
+        public string Article { get; set; }
         /// <summary>
         ///     Gets or sets the sprite identifier.
         /// </summary>
         /// <value>
         ///     The sprite identifier.
         /// </value>
-        public ushort SpriteId { get; set; }
-
-        /// <inheritdoc />
+        public ushort SpriteId { get; set; }
         /// <summary>
         ///     Gets or sets the type of the group.
         /// </summary>
         /// <value>
         ///     The type of the group.
         /// </value>
-        public ItemGroupType GroupType { get; set; }
-
-        /// <inheritdoc />
+        public ItemGroupType GroupType { get; set; }
         /// <summary>
         ///     Gets or sets the speed.
         /// </summary>
         /// <value>
         ///     The speed.
         /// </value>
-        public ushort? Speed { get; set; }
-
-        /// <inheritdoc />
+        public ushort? Speed { get; set; }
         /// <summary>
         ///     Gets or sets the write once item identifier.
         /// </summary>
         /// <value>
         ///     The write once item identifier.
         /// </value>
-        public ushort? WriteOnceItemId { get; set; }
-
-        /// <inheritdoc />
+        public ushort? WriteOnceItemId { get; set; }
         /// <summary>
         ///     Gets or sets the floor change direction.
         /// </summary>
@@ -200,27 +189,21 @@ namespace Tibia.Items
         /// <value>
         ///     <see langword="true" /> if this instance is stackable; otherwise, <see langword="false" />.
         /// </value>
-        public bool IsStackable { get; set; }
-
-        /// <inheritdoc />
+        public bool IsStackable { get; set; }
         /// <summary>
         ///     Gets the render priority.
         /// </summary>
         /// <value>
         ///     The render priority.
         /// </value>
-        public RenderPriority RenderPriority { get; set; } = RenderPriority.Lowest;
-
-        /// <inheritdoc />
+        public RenderPriority RenderPriority { get; set; } = RenderPriority.Lowest;
         /// <summary>
         ///     Gets or sets the name.
         /// </summary>
         /// <value>
         ///     The name.
         /// </value>
-        public string Name { get; set; }
-
-        /// <inheritdoc />
+        public string Name { get; set; }
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>

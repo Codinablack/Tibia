@@ -379,7 +379,7 @@ namespace Tibia.Data
         /// <value>
         ///     The open containers.
         /// </value>
-        Dictionary<int, IContainerItemSpawn> OpenContainers { get; }
+        IEnumerable<IContainerItemSpawn> OpenContainers { get; }
 
         /// <summary>
         ///     Gets or sets the party identifier.
@@ -556,5 +556,13 @@ namespace Tibia.Data
         ///     The world identifier.
         /// </value>
         byte WorldId { get; set; }
+
+        /// <summary>
+        ///     Attempts to get the container from the collection of open containers with the specified index.
+        /// </summary>
+        /// <param name="index">The index.</param>
+        /// <param name="containerItemSpawn">The container item spawn.</param>
+        /// <returns><c>true</c> if the container is successfully obtained.</returns>
+        bool TryGetOpenContainer(int index, out IContainerItemSpawn containerItemSpawn);
     }
 }

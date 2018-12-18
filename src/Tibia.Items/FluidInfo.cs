@@ -3,26 +3,21 @@
 namespace Tibia.Items
 {
     public class FluidInfo : IFluid
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets or sets the color.
         /// </summary>
         /// <value>
         ///     The color.
         /// </value>
-        public FluidColor Color { get; set; }
-
-        /// <inheritdoc />
+        public FluidColor Color { get; set; }
         /// <summary>
         ///     Gets or sets the type.
         /// </summary>
         /// <value>
         ///     The type.
         /// </value>
-        public FluidType Type { get; set; }
-
-        /// <inheritdoc />
+        public FluidType Type { get; set; }
         /// <summary>
         ///     Gets or sets the message.
         /// </summary>

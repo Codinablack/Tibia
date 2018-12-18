@@ -9,8 +9,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The type.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override ChannelType Type => ChannelType.AdvertisingRookgaard;
     }
 }

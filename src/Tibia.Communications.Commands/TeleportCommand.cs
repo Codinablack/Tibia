@@ -28,11 +28,8 @@ namespace Tibia.Communications.Commands
         /// </summary>
         /// <value>
         ///     The keyword.
-        /// </value>
-        /// <inheritdoc />
-        public override string Keyword { get; } = "/goto";
-
-        /// <inheritdoc />
+        /// </value>
+        public override string Keyword { get; } = "/goto";
         /// <summary>
         ///     Gets a value indicating whether the text should be posted in the channel.
         /// </summary>
@@ -44,9 +41,7 @@ namespace Tibia.Communications.Commands
         public override bool PostInChannel(ICharacterSpawn caster, params string[] args)
         {
             return !caster.Creature.Settings.CanTeleport;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether this instance can be executed by the caster.
         /// </summary>
@@ -55,14 +50,11 @@ namespace Tibia.Communications.Commands
         /// <returns>
         ///     <see langword="true" /> if this instance can be executed by the specified caster; otherwise,
         ///     <see langword="false" />.
-        /// </returns>
-        /// <inheritdoc />
+        /// </returns>
         public override bool CanExecute(ICharacterSpawn caster, params string[] args)
         {
             return caster.Creature.Settings.CanTeleport;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Executes the command.
         /// </summary>

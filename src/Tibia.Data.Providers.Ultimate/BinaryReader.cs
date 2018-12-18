@@ -16,9 +16,7 @@ namespace Tibia.Data.Providers.Ultimate
         public BinaryReader(Stream stream)
         {
             _binaryReader = new System.IO.BinaryReader(stream);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>

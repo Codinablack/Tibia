@@ -5,8 +5,7 @@ using Tibia.Data;
 namespace Tibia.Communications.Channels
 {
     public class PrivateChannel : ChannelBase, IPrivateChannel, IQueryableChannel
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Communications.Channels.PrivateChannel" /> class.
         /// </summary>
@@ -30,27 +29,21 @@ namespace Tibia.Communications.Channels
         /// <value>
         ///     The name.
         /// </value>
-        public override string Name => $"{Owner.Character.Name}'s private channel";
-
-        /// <inheritdoc />
+        public override string Name => $"{Owner.Character.Name}'s private channel";
         /// <summary>
         ///     Gets or sets the invitations.
         /// </summary>
         /// <value>
         ///     The invitations.
         /// </value>
-        public ICollection<ICharacterSpawn> Invitations { get; }
-
-        /// <inheritdoc />
+        public ICollection<ICharacterSpawn> Invitations { get; }
         /// <summary>
         ///     Gets or sets the owner.
         /// </summary>
         /// <value>
         ///     The owner.
         /// </value>
-        public ICharacterSpawn Owner { get; set; }
-
-        /// <inheritdoc />
+        public ICharacterSpawn Owner { get; set; }
         /// <summary>
         ///     Invites the specified character spawn.
         /// </summary>
@@ -62,9 +55,7 @@ namespace Tibia.Communications.Channels
                 return;
 
             Invitations.Add(characterSpawn);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Uninvites the specified character spawn.
         /// </summary>
@@ -75,9 +66,7 @@ namespace Tibia.Communications.Channels
                 return;
 
             Invitations.Remove(characterSpawn);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether the specified character spawn is invited.
         /// </summary>
@@ -88,29 +77,21 @@ namespace Tibia.Communications.Channels
         public bool IsInvited(ICharacterSpawn characterSpawn)
         {
             return Invitations.Contains(characterSpawn);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Closes this instance.
         /// </summary>
         public void Close()
         {
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Occurs when the channel is querying.
         /// </summary>
-        public event EventHandler<QueryingChannelEventArgs> Querying;
-
-        /// <inheritdoc />
+        public event EventHandler<QueryingChannelEventArgs> Querying;
         /// <summary>
         ///     Occurs when the channel is queried.
         /// </summary>
-        public event EventHandler<QueriedChannelEventArgs> Queried;
-
-        /// <inheritdoc />
+        public event EventHandler<QueriedChannelEventArgs> Queried;
         /// <summary>
         ///     Queries the channel with the specified character spawn.
         /// </summary>

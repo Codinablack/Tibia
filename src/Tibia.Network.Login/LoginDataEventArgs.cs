@@ -5,8 +5,7 @@ using Tibia.Data;
 namespace Tibia.Network.Login
 {
     public class LoginDataEventArgs : EventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Network.Login.LoginDataEventArgs" /> class.
         /// </summary>

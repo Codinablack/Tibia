@@ -11,18 +11,14 @@ namespace Tibia.Outfits
         public Outfit(string name)
         {
             Name = name;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Outfits.Outfit" /> class.
         /// </summary>
         public Outfit()
             : this(0, 0, 0, 0, 0, 0)
         {
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Outfits.Outfit" /> class.
         /// </summary>
@@ -42,9 +38,7 @@ namespace Tibia.Outfits
             Legs = legs;
             Feet = feet;
             Addons = addons;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Outfits.Outfit" /> class.
         /// </summary>
@@ -60,9 +54,7 @@ namespace Tibia.Outfits
             Legs = 0;
             Feet = 0;
             Addons = 0;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Outfits.Outfit" /> class.
         /// </summary>
@@ -79,144 +71,112 @@ namespace Tibia.Outfits
             Legs = 0;
             Feet = 0;
             Addons = addons;
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the name.
         /// </summary>
         /// <value>
         ///     The name.
         /// </value>
-        public string Name { get; set; }
-
-        /// <inheritdoc />
+        public string Name { get; set; }
         /// <summary>
         ///     Gets or sets the sprite identifier.
         /// </summary>
         /// <value>
         ///     The sprite identifier.
         /// </value>
-        public ushort SpriteId { get; set; }
-
-        /// <inheritdoc />
+        public ushort SpriteId { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is premium.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is premium; otherwise, <c>false</c>.
         /// </value>
-        public bool IsPremium { get; set; }
-
-        /// <inheritdoc />
+        public bool IsPremium { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is unlocked.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is unlocked; otherwise, <c>false</c>.
         /// </value>
-        public bool IsUnlocked { get; set; }
-
-        /// <inheritdoc />
+        public bool IsUnlocked { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is enabled.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is enabled; otherwise, <c>false</c>.
         /// </value>
-        public bool IsEnabled { get; set; }
-
-        /// <inheritdoc />
+        public bool IsEnabled { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is god tier.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is god tier; otherwise, <c>false</c>.
         /// </value>
-        public bool IsGodTier { get; set; }
-
-        /// <inheritdoc />
+        public bool IsGodTier { get; set; }
         /// <summary>
         ///     Gets or sets the addons.
         /// </summary>
         /// <value>
         ///     The addons.
         /// </value>
-        public byte Addons { get; set; }
-
-        /// <inheritdoc />
+        public byte Addons { get; set; }
         /// <summary>
         ///     Gets or sets the body.
         /// </summary>
         /// <value>
         ///     The body.
         /// </value>
-        public byte Body { get; set; }
-
-        /// <inheritdoc />
+        public byte Body { get; set; }
         /// <summary>
         ///     Gets or sets the feet.
         /// </summary>
         /// <value>
         ///     The feet.
         /// </value>
-        public byte Feet { get; set; }
-
-        /// <inheritdoc />
+        public byte Feet { get; set; }
         /// <summary>
         ///     Gets or sets the head.
         /// </summary>
         /// <value>
         ///     The head.
         /// </value>
-        public byte Head { get; set; }
-
-        /// <inheritdoc />
+        public byte Head { get; set; }
         /// <summary>
         ///     Gets or sets the legs.
         /// </summary>
         /// <value>
         ///     The legs.
         /// </value>
-        public byte Legs { get; set; }
-
-        /// <inheritdoc />
+        public byte Legs { get; set; }
         /// <summary>
         ///     Gets or sets the sex.
         /// </summary>
         /// <value>
         ///     The sex.
         /// </value>
-        public Sex Sex { get; set; }
-
-        /// <inheritdoc />
+        public Sex Sex { get; set; }
         /// <summary>
         ///     Gets or sets the item.
         /// </summary>
         /// <value>
         ///     The item.
         /// </value>
-        public ushort Item { get; set; }
-
-        /// <inheritdoc />
+        public ushort Item { get; set; }
         /// <summary>
         ///     Gets or sets a value indicating whether this instance is default.
         /// </summary>
         /// <value>
         ///     <c>true</c> if this instance is default; otherwise, <c>false</c>.
         /// </value>
-        public bool IsDefault { get; set; }
-
-        /// <inheritdoc />
+        public bool IsDefault { get; set; }
         /// <summary>
         ///     Gets or sets the corpse identifier.
         /// </summary>
         /// <value>
         ///     The corpse identifier.
         /// </value>
-        public int CorpseId { get; set; }
-
-        /// <inheritdoc />
+        public int CorpseId { get; set; }
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>

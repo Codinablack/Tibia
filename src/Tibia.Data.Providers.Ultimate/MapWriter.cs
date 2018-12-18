@@ -7,18 +7,20 @@ namespace Tibia.Data.Providers.Ultimate
 {
     public class MapWriter : IDisposable
     {
+        private readonly TileService _tileService;
         private readonly BinaryWriter _binaryWriter;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="MapWriter" /> class.
         /// </summary>
         /// <param name="stream">The stream.</param>
-        public MapWriter(Stream stream)
+        /// <param name="tileService">The tile service.</param>
+        public MapWriter(Stream stream, TileService tileService)
         {
+            _tileService = tileService;
             _binaryWriter = new BinaryWriter(stream);
         }
 
-        /// <inheritdoc />
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
@@ -60,7 +62,7 @@ namespace Tibia.Data.Providers.Ultimate
                 _binaryWriter.WriteInt32((int) tile.Value.Flags);
                 _binaryWriter.WriteVector3(tile.Value.Position);
 
-                foreach (IItemSpawn item in tile.Value.Items)
+                foreach (IItemSpawn item in _tileService.Items(tile.Key))
                     _binaryWriter.WriteUInt32(item.Item.Id);
             }
         }

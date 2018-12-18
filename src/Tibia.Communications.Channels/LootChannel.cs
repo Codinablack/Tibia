@@ -3,8 +3,7 @@
 namespace Tibia.Communications.Channels
 {
     public class LootChannel : ChannelBase
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Communications.Channels.LootChannel" /> class.
         /// </summary>
@@ -19,8 +18,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override string Name => "Loot";
 
         /// <summary>

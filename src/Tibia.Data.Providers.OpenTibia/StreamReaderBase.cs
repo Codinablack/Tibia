@@ -21,9 +21,7 @@ namespace Tibia.Data.Providers.OpenTibia
         /// <value>
         ///     The reader.
         /// </value>
-        protected virtual BinaryReader Reader { get; }
-
-        /// <inheritdoc />
+        protected virtual BinaryReader Reader { get; }
         /// <summary>
         ///     Peeks the character.
         /// </summary>
@@ -31,9 +29,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual int PeekChar()
         {
             return Reader.PeekChar();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the byte.
         /// </summary>
@@ -41,9 +37,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual byte ReadByte()
         {
             return Reader.ReadByte();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the unsigned short integer.
         /// </summary>
@@ -51,9 +45,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual ushort ReadUInt16()
         {
             return Reader.ReadUInt16();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the single.
         /// </summary>
@@ -61,9 +53,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual float ReadSingle()
         {
             return Reader.ReadSingle();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the unsigned integer.
         /// </summary>
@@ -71,9 +61,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual uint ReadUInt32()
         {
             return Reader.ReadUInt32();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the integer.
         /// </summary>
@@ -81,9 +69,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public virtual int ReadInt32()
         {
             return Reader.ReadInt32();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the string.
         /// </summary>

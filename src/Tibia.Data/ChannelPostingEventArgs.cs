@@ -3,8 +3,7 @@
 namespace Tibia.Data
 {
     public class ChannelPostingEventArgs : CancelEventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.ChannelPostingEventArgs" /> class.
         /// </summary>

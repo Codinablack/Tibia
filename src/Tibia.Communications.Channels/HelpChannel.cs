@@ -9,8 +9,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override string Name => "Help";
 
         /// <summary>
@@ -18,8 +17,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The type.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override ChannelType Type => ChannelType.Help;
     }
 }

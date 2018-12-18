@@ -15,9 +15,7 @@ namespace Tibia.Data.Providers.Ultimate
         public BinaryWriter(Stream stream)
         {
             _binaryWriter = new System.IO.BinaryWriter(stream);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>

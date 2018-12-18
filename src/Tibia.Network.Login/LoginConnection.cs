@@ -17,9 +17,7 @@ namespace Tibia.Network.Login
         /// <summary>
         ///     Occurs when the login data is requested.
         /// </summary>
-        public event EventHandler<LoginDataEventArgs> RequestLoginData;
-
-        /// <inheritdoc />
+        public event EventHandler<LoginDataEventArgs> RequestLoginData;
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Network.Login.LoginConnection" /> class.
         /// </summary>

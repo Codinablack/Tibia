@@ -7,9 +7,7 @@ namespace Tibia.Communications.Channels
 {
     public class AdvertisingChannel : PublicQueryableChannel
     {
-        private readonly IDictionary<uint, Stopwatch> _muteConditionByCharacterSpawnId;
-
-        /// <inheritdoc />
+        private readonly IDictionary<uint, Stopwatch> _muteConditionByCharacterSpawnId;
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Communications.Channels.AdvertisingChannel" /> class.
         /// </summary>
@@ -25,8 +23,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override string Name => "Advertising";
 
         /// <summary>
@@ -34,8 +31,7 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The type.
-        /// </value>
-        /// <inheritdoc />
+        /// </value>
         public override ChannelType Type => ChannelType.Advertising;
 
         /// <summary>
@@ -44,9 +40,7 @@ namespace Tibia.Communications.Channels
         /// <value>
         ///     The mute span.
         /// </value>
-        public TimeSpan MuteSpan { get; } = TimeSpan.FromMinutes(2);
-
-        /// <inheritdoc />
+        public TimeSpan MuteSpan { get; } = TimeSpan.FromMinutes(2);
         /// <summary>
         ///     Gets the minimum level.
         /// </summary>

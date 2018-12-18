@@ -9,20 +9,15 @@ namespace Tibia.Communications.Channels
         /// </summary>
         /// <value>
         ///     The name.
-        /// </value>
-        /// <inheritdoc />
-        public override string Name => "Default";
-
-        /// <inheritdoc />
+        /// </value>
+        public override string Name => "Default";
         /// <summary>
         ///     Gets or sets the type.
         /// </summary>
         /// <value>
         ///     The type.
         /// </value>
-        public override ChannelType Type => ChannelType.Local;
-
-        /// <inheritdoc />
+        public override ChannelType Type => ChannelType.Local;
         /// <summary>
         ///     Sends the message.
         /// </summary>

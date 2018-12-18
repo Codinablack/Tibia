@@ -53,9 +53,7 @@ namespace Tibia.Spawns
         /// <value>
         ///     The creature spawns.
         /// </value>
-        public IEnumerable<ICreatureSpawn> CreatureSpawns => _creatureSpawns;
-
-        /// <inheritdoc />
+        public IEnumerable<ICreatureSpawn> CreatureSpawns => _creatureSpawns;
         /// <summary>
         ///     Gets the creature spawn by identifier.
         /// </summary>

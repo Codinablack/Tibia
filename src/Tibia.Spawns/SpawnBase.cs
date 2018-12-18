@@ -11,27 +11,21 @@ namespace Tibia.Spawns
         protected SpawnBase()
         {
             LightInfo = new LightInfo();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets or sets the light information.
         /// </summary>
         /// <value>
         ///     The light information.
         /// </value>
-        public ILightInfo LightInfo { get; set; }
-
-        /// <inheritdoc />
+        public ILightInfo LightInfo { get; set; }
         /// <summary>
         ///     Gets or sets the tile.
         /// </summary>
         /// <value>
         ///     The tile.
         /// </value>
-        public ITile Tile { get; set; }
-
-        /// <inheritdoc />
+        public ITile Tile { get; set; }
         /// <summary>
         ///     Gets or sets the stack position.
         /// </summary>

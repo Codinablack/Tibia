@@ -15,9 +15,7 @@ namespace Tibia.Core
         public ObservableCollection()
         {
             _items = new HashSet<T>();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Returns an enumerator that iterates through the collection.
         /// </summary>
@@ -27,9 +25,7 @@ namespace Tibia.Core
         public IEnumerator<T> GetEnumerator()
         {
             return _items.GetEnumerator();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Returns an enumerator that iterates through a collection.
         /// </summary>
@@ -39,9 +35,7 @@ namespace Tibia.Core
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
         /// </summary>
@@ -57,18 +51,14 @@ namespace Tibia.Core
 
             AddedItemEventArgs<T> addedItemEventArgs = new AddedItemEventArgs<T>(addingItemEventArgs.Item);
             AddedItem?.Invoke(this, addedItemEventArgs);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
         /// </summary>
         public void Clear()
         {
             _items.Clear();
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Determines whether the <see cref="T:System.Collections.Generic.ICollection`1"></see> contains a specific value.
         /// </summary>
@@ -80,9 +70,7 @@ namespace Tibia.Core
         public bool Contains(T item)
         {
             return _items.Contains(item);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1"></see> to an
         ///     <see cref="T:System.Array"></see>, starting at a particular <see cref="T:System.Array"></see> index.
@@ -96,9 +84,7 @@ namespace Tibia.Core
         public void CopyTo(T[] array, int arrayIndex)
         {
             _items.CopyTo(array, arrayIndex);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Removes the first occurrence of a specific object from the
         ///     <see cref="T:System.Collections.Generic.ICollection`1"></see>.
@@ -113,15 +99,11 @@ namespace Tibia.Core
         public bool Remove(T item)
         {
             return _items.Remove(item);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
         /// </summary>
-        public int Count => _items.Count;
-
-        /// <inheritdoc />
+        public int Count => _items.Count;
         /// <summary>
         ///     Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1"></see> is read-only.
         /// </summary>
@@ -139,8 +121,7 @@ namespace Tibia.Core
     }
 
     public class AddedItemEventArgs<T> : EventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.AddedItemEventArgs" /> class.
         /// </summary>
@@ -160,8 +141,7 @@ namespace Tibia.Core
     }
 
     public class AddingItemEventArgs<T> : CancelEventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.AddingItemEventArgs" /> class.
         /// </summary>

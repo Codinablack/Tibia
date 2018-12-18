@@ -1,5 +1,3 @@
-using Tibia.Core;
-
 namespace Tibia.Data
 {
     public interface ITile
@@ -20,14 +18,13 @@ namespace Tibia.Data
         /// </value>
         TileFlags Flags { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the floor change direction.
         /// </summary>
         /// <value>
         ///     The floor change direction.
         /// </value>
-        FloorChangeDirection FloorChangeDirection { get; }
+        FloorChangeDirection FloorChangeDirection { get; set;  }
 
         /// <summary>
         ///     Gets or sets the house identifier.
@@ -36,14 +33,6 @@ namespace Tibia.Data
         ///     The house identifier.
         /// </value>
         uint? HouseId { get; set; }
-
-        /// <summary>
-        ///     Gets or sets the items.
-        /// </summary>
-        /// <value>
-        ///     The items.
-        /// </value>
-        ObservableCollection<IItemSpawn> Items { get; set; }
 
         /// <summary>
         ///     Gets or sets the ground.

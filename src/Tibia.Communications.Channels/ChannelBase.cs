@@ -21,45 +21,33 @@ namespace Tibia.Communications.Channels
         /// <value>
         ///     The minimum level.
         /// </value>
-        public virtual int MinLevel => 0;
-
-        /// <inheritdoc />
+        public virtual int MinLevel => 0;
         /// <summary>
         ///     Gets or sets the members.
         /// </summary>
         /// <value>
         ///     The members.
         /// </value>
-        public IDictionary<uint, ICharacterSpawn> Members { get; }
-
-        /// <inheritdoc />
+        public IDictionary<uint, ICharacterSpawn> Members { get; }
         /// <summary>
         ///     Gets or sets the name.
         /// </summary>
         /// <value>
         ///     The name.
         /// </value>
-        public abstract string Name { get; }
-
-        /// <inheritdoc />
+        public abstract string Name { get; }
         /// <summary>
         ///     Occurs when a character is posting a message.
         /// </summary>
-        public event EventHandler<ChannelPostingEventArgs> Posting;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelPostingEventArgs> Posting;
         /// <summary>
         ///     Occurs when a character posted a message.
         /// </summary>
-        public event EventHandler<ChannelPostedEventArgs> Posted;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelPostedEventArgs> Posted;
         /// <summary>
         ///     Occurs when a character spawn is unregistering.
         /// </summary>
-        public event EventHandler<ChannelUnregisteringEventArgs> Unregistering;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelUnregisteringEventArgs> Unregistering;
         /// <summary>
         ///     Registers the specified character spawn.
         /// </summary>
@@ -78,9 +66,7 @@ namespace Tibia.Communications.Channels
 
             ChannelRegisteredEventArgs channelRegisteredEventArgs = new ChannelRegisteredEventArgs(characterSpawn);
             Registered?.Invoke(this, channelRegisteredEventArgs);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Unregisters the specified character spawn.
         /// </summary>
@@ -99,21 +85,15 @@ namespace Tibia.Communications.Channels
 
             ChannelUnregisteredEventArgs channelUnregisteredEventArgs = new ChannelUnregisteredEventArgs(characterSpawn);
             Unregistered?.Invoke(this, channelUnregisteredEventArgs);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Occurs when a character spawn is registered.
         /// </summary>
-        public event EventHandler<ChannelRegisteredEventArgs> Registered;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelRegisteredEventArgs> Registered;
         /// <summary>
         ///     Occurs when a character spawn is unregistered.
         /// </summary>
-        public event EventHandler<ChannelUnregisteredEventArgs> Unregistered;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelUnregisteredEventArgs> Unregistered;
         /// <summary>
         ///     Posts the specified message.
         /// </summary>
@@ -131,15 +111,11 @@ namespace Tibia.Communications.Channels
 
             ChannelPostedEventArgs channelPostedEventArgs = new ChannelPostedEventArgs(characterSpawn, channelPostingEventArgs.Type, channelPostingEventArgs.Text);
             Posted?.Invoke(this, channelPostedEventArgs);
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Occurs when a character spawn is registering.
         /// </summary>
-        public event EventHandler<ChannelRegisteringEventArgs> Registering;
-
-        /// <inheritdoc />
+        public event EventHandler<ChannelRegisteringEventArgs> Registering;
         /// <summary>
         ///     Gets or sets the identifier.
         /// </summary>

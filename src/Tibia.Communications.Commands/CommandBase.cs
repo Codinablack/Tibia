@@ -4,17 +4,14 @@ using Tibia.Data;
 namespace Tibia.Communications.Commands
 {
     public abstract class CommandBase : ICommand
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets the keyword.
         /// </summary>
         /// <value>
         ///     The keyword.
         /// </value>
-        public abstract string Keyword { get; }
-
-        /// <inheritdoc />
+        public abstract string Keyword { get; }
         /// <summary>
         ///     Gets a value indicating whether the text should be posted in the channel.
         /// </summary>
@@ -23,9 +20,7 @@ namespace Tibia.Communications.Commands
         /// <returns>
         ///     <see langword="true" /> if [post in channel]; otherwise, <see langword="false" />
         /// </returns>
-        public abstract bool PostInChannel(ICharacterSpawn caster, params string[] args);
-
-        /// <inheritdoc />
+        public abstract bool PostInChannel(ICharacterSpawn caster, params string[] args);
         /// <summary>
         ///     Determines whether this instance can be executed by the caster.
         /// </summary>
@@ -35,9 +30,7 @@ namespace Tibia.Communications.Commands
         ///     <see langword="true" /> if this instance can be executed by the specified caster; otherwise,
         ///     <see langword="false" />.
         /// </returns>
-        public abstract bool CanExecute(ICharacterSpawn caster, params string[] args);
-
-        /// <inheritdoc />
+        public abstract bool CanExecute(ICharacterSpawn caster, params string[] args);
         /// <summary>
         ///     Executes the command from the specified caster.
         /// </summary>

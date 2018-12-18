@@ -4,8 +4,7 @@ using System.IO;
 namespace Tibia.Data.Providers.OpenTibia
 {
     public class ItemStreamReader : StreamReaderBase, IItemStreamReader
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Data.Providers.OpenTibia.ItemStreamReader" /> class.
         /// </summary>
@@ -13,9 +12,7 @@ namespace Tibia.Data.Providers.OpenTibia
         public ItemStreamReader(Stream stream)
             : base(stream)
         {
-        }
-
-        /// <inheritdoc />
+        }
         /// <summary>
         ///     Reads the metadata.
         /// </summary>

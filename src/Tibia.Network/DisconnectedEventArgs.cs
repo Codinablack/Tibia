@@ -4,8 +4,7 @@ using Tibia.Spawns;
 namespace Tibia.Network
 {
     public class DisconnectedEventArgs : EventArgs
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Tibia.Network.DisconnectedEventArgs" /> class.
         /// </summary>

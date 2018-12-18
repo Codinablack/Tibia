@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Tibia.Data;
+﻿using Tibia.Data;
 
 namespace Tibia.Map
 {
@@ -17,26 +15,6 @@ namespace Tibia.Map
         {
             // TODO: This implementation is not efficient and will be replaced with simple properties in IItem class
             return tile.Ground != null && !tile.Ground.Item.IsSolidBlock;
-        }
-
-        /// <summary>
-        ///     Gets the items before medium priority.
-        /// </summary>
-        /// <param name="tile">The tile.</param>
-        /// <returns>The items before medium priority.</returns>
-        public static IEnumerable<IItemSpawn> GetItemsBeforeMediumPriority(this ITile tile)
-        {
-            return tile.Items.Where(s => s.Item.RenderPriority < RenderPriority.Medium);
-        }
-
-        /// <summary>
-        ///     Gets the items after medium priority.
-        /// </summary>
-        /// <param name="tile">The tile.</param>
-        /// <returns>The items after medium priority.</returns>
-        public static IEnumerable<IItemSpawn> GetItemsAfterMediumPriority(this ITile tile)
-        {
-            return tile.Items.Where(s => s.Item.RenderPriority > RenderPriority.Medium);
         }
 
         /// <summary>
@@ -75,7 +53,7 @@ namespace Tibia.Map
                     break;
                 case FloorChangeDirection.Down:
                     z += 1;
-                    ITile targetTile = tileService.GetTileByPosition(new Vector3(x, y, z));
+                    ITile targetTile = tileService.Tile(new Vector3(x, y, z));
                     switch (targetTile.FloorChangeDirection)
                     {
                         case FloorChangeDirection.North:

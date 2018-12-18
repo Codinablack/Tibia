@@ -3,17 +3,14 @@
 namespace Tibia.Data
 {
     public struct OfflineTrainingInfo : IOfflineTrainingInfo
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Gets the time elapsed.
         /// </summary>
         /// <value>
         ///     The time elapsed.
         /// </value>
-        public TimeSpan Elapsed { get; set; }
-
-        /// <inheritdoc />
+        public TimeSpan Elapsed { get; set; }
         /// <summary>
         ///     Gets or sets the skill.
         /// </summary>

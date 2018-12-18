@@ -3,8 +3,7 @@
 namespace Tibia.Data.Providers.OpenTibia
 {
     public class MapFileReader : FileReaderBase<MapStreamReader>
-    {
-        /// <inheritdoc />
+    {
         /// <summary>
         ///     Reads the property.
         /// </summary>

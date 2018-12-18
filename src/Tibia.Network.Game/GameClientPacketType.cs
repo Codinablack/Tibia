@@ -122,7 +122,7 @@
         Packet117 = 0x75,
         Packet118 = 0x76,
         Packet119 = 0x77,
-        ItemMove = 0x78,
+        ArtifactMove = 0x78,
         ShopLookAt = 0x79,
         ShopBuy = 0x7A,
         ShopSell = 0x7B,
